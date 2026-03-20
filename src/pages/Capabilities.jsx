@@ -1,76 +1,170 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { FaCheckCircle } from 'react-icons/fa';
 
 const Capabilities = () => {
-  const capList = [
-    { title: "CNC Turning & Milling", desc: "Simultaneous 5-axis machining for complex geometries." },
-    { title: "Robotic Welding & Assembly", desc: "Automated TIG/MIG welding ensuring perfect joints every time." },
-    { title: "Quality Prototyping", desc: "Rapid 3D printing and iterative design validation." },
-    { title: "CMM Inspection", desc: "Micro-level coordinate measuring for flawless adherence to specs." }
-  ];
-
   return (
     <div>
-      <section className="page-header-premium">
-        <div className="hero-glow"></div>
-        <Container className="position-relative" style={{ zIndex: 2 }}>
-          <motion.div initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.6 }}>
-            <div className="premium-badge mb-3">Infrastructure</div>
-            <h1 className="display-4 fw-bolder text-white mb-3">Our <span className="text-gradient-accent">Capabilities</span></h1>
-            <p className="lead text-muted mx-auto" style={{ maxWidth: '600px' }}>
-              We possess a comprehensive suite of manufacturing capabilities that allow us to produce high-precision and complex components.
-            </p>
-          </motion.div>
+      {/* Hero Image Section */}
+      <section className="p-0 m-0">
+        <img 
+          src="https://sdn.co.in/wp-content/uploads/2025/10/banner.png" 
+          alt="Capabilities" 
+          style={{ width: '100%', maxHeight: '500px', objectFit: 'cover', display: 'block' }} 
+          onError={(e) => { e.target.onError = null; e.target.src = "/gallery/9.jpeg" }}
+        />
+      </section>
+
+      {/* Services Section */}
+      <section className="py-5" style={{ marginTop: '40px', marginBottom: '80px' }}>
+        <Container>
+          <Row className="g-5 text-center mb-5">
+            <Col lg={4}>
+               <img src="https://sdn.co.in/wp-content/uploads/2025/10/LOKESH-TL160.png" alt="CNC Machining" className="img-fluid mb-4" style={{ height: '220px', objectFit: 'cover' }} onError={(e) => e.target.style.display='none'} />
+               <h4 style={{ color: '#009CD7', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>CNC MACHINING</h4>
+               <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#444', textAlign: 'justify' }}>
+                 At SDN Engineering, we specialize in the precision machining of complex components using advanced CNC turning centers and Vertical Machining Centers (VMCs). Our machining capabilities cover a wide range of materials including carbon steel, alloy steel, stainless steel, aluminum, and brass. With multi-axis CNCs, VMCs with 4th-axis functionality, and robotic automation, we ensure consistent accuracy, repeatability, and productivity in every operation.
+               </p>
+            </Col>
+            <Col lg={4}>
+               <img src="https://sdn.co.in/wp-content/uploads/2025/10/shutterstock_1492926674-1-2.png" alt="Secondary Operations" className="img-fluid mb-4" style={{ height: '220px', objectFit: 'cover' }} onError={(e) => e.target.style.display='none'} />
+               <h4 style={{ color: '#009CD7', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>SECONDARY OPERATIONS</h4>
+               <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#444', textAlign: 'justify' }}>
+                 Our in-house machining setup supports a variety of secondary and finishing operations such as thread rolling, drilling, tapping, and bandsaw cutting. Equipped with high-precision thread rolling machines, automated handling systems, and dedicated finishing equipment, we provide complete machining solutions from raw material to finished part — all under one roof.
+               </p>
+            </Col>
+            <Col lg={4}>
+               <img src="https://sdn.co.in/wp-content/uploads/2025/10/shutterstock_1950663952-1-1.png" alt="Tooling" className="img-fluid mb-4" style={{ height: '220px', objectFit: 'cover' }} onError={(e) => e.target.style.display='none'} />
+               <h4 style={{ color: '#009CD7', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>TOOLING & FIXTURE DEVELOPMENT</h4>
+               <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#444', textAlign: 'justify' }}>
+                 We maintain an in-house tool and fixture development facility for producing jigs, fixtures, and gauges essential for our machining operations. This enables quick setup changes, reduced downtime, and higher consistency. Our experienced engineering team also collaborates with specialized tool manufacturers to design cutting tools and fixtures for complex components, ensuring efficiency and precision in production.
+               </p>
+            </Col>
+          </Row>
+
+          <hr style={{ borderColor: '#009CD7', borderWidth: '2px', opacity: 0.5, marginBottom: '50px' }} />
+
+          <Row className="g-5 text-center mb-5">
+            <Col lg={4}>
+               <h4 style={{ color: '#009CD7', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>HEAT TREATMENT</h4>
+               <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#444', textAlign: 'justify' }}>
+                 Heat treatment is carried out through approved, customer-certified vendors to ensure the required mechanical properties and dimensional stability. Processes such as hardening, tempering, case hardening, induction hardening, and nitriding are performed under strict quality supervision. Components are periodically validated through NABL-approved laboratories to ensure compliance with customer and industry standards.
+               </p>
+            </Col>
+            <Col lg={4}>
+               <h4 style={{ color: '#009CD7', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>SURFACE TREATMENT</h4>
+               <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#444', textAlign: 'justify' }}>
+                 All surface treatment and coating operations are handled by qualified and approved vendors. Processes include zinc, zinc-nickel, trivalent zinc, and electroless nickel plating, depending on the component application. Coating thickness, adhesion, and corrosion resistance are verified through periodic salt spray and XRF tests at certified laboratories, ensuring the highest surface quality and performance.
+               </p>
+            </Col>
+            <Col lg={4}>
+               <h4 style={{ color: '#009CD7', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>QUALITY CONTROL & INSPECTION</h4>
+               <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#444', textAlign: 'justify' }}>
+                 Quality is the foundation of everything we do at SDN Engineering. Each new product undergoes Advanced Product Quality Planning (APQP) to ensure complete understanding of customer requirements. We apply global quality methodologies such as FMEA, MSA, SPC, and PPAP to develop robust processes. All critical dimensions are verified using precision instruments and gauges, and a Coordinate Measuring Machine (CMM) is planned for installation to further enhance accuracy and validation capabilities. Our commitment to continuous improvement, traceability, and process control ensures that every component meets or exceeds customer expectations — consistently and reliably.
+               </p>
+            </Col>
+          </Row>
         </Container>
       </section>
 
-      <section className="py-5" style={{ marginTop: '80px', marginBottom: '80px' }}>
+      {/* Machine Capacity Section */}
+      <section className="py-5 bg-light" style={{ paddingBottom: '100px' }}>
         <Container>
-          <Row className="align-items-center">
-            <Col lg={6} className="mb-5 mb-lg-0">
-              <motion.div 
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <h3 className="fw-bolder mb-4 display-6" style={{ color: 'var(--premium-dark)' }}>State-of-the-Art <br/>Manufacturing</h3>
-                <p className="text-muted lh-lg fs-5 mb-5">
-                  Our facility is equipped with multiple CNC machines, VMCs, and robotic arms to automate and streamline our production cycle without losing human-centric quality oversight.
-                </p>
-                <div className="d-flex flex-column gap-4">
-                  {capList.map((item, idx) => (
-                    <motion.div 
-                      key={idx}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: idx * 0.15 }}
-                      className="d-flex"
-                    >
-                      <FaCheckCircle className="text-gradient-accent fs-4 mt-1 me-3" style={{ color: '#0ea5e9' }} />
-                      <div>
-                        <h5 className="fw-bold mb-1" style={{ color: 'var(--premium-dark)' }}>{item.title}</h5>
-                        <p className="text-muted mb-0">{item.desc}</p>
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
+          <div className="text-center mb-5">
+            <h2 style={{ color: '#009CD7', fontWeight: 'bold', fontSize: '28px' }}>Machine Capacity</h2>
+          </div>
+
+          <style>
+             {`
+               .machine-table th { color: #006644; border: 1px solid #000; padding: 12px; text-align: center; font-weight: bold; background: #fff; }
+               .machine-table td { border: 1px solid #000; padding: 12px; text-align: center; font-weight: bold; background: #fff; }
+             `}
+          </style>
+
+          {/* Row 1 */}
+          <Row className="align-items-center justify-content-center mb-5 pb-4 border-bottom">
+            <Col lg={5} className="text-center mb-4 mb-lg-0">
+               <img src="https://sdn.co.in/wp-content/uploads/2025/10/jobber.png" alt="CNC Turning" className="img-fluid" style={{ maxHeight: '350px' }} onError={(e) => { e.target.onError = null; e.target.src = "/gallery/9.jpeg" }} />
             </Col>
-            <Col lg={6} className="ps-lg-5">
-              <motion.img 
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                src="https://images.unsplash.com/photo-1565106430372-f1bd001a1d1d?q=80&w=2070&auto=format&fit=crop" 
-                alt="Machinery" 
-                className="img-fluid img-premium" 
-              />
+            <Col lg={6}>
+               <table className="table machine-table w-100 mb-0">
+                  <thead>
+                     <tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr>
+                  </thead>
+                  <tbody>
+                     <tr><td>CNC Turning<br/>Centre</td><td>Jobber Elite</td><td>270x200<br/>mm</td><td>3</td></tr>
+                     <tr><td>CNC Turning<br/>Centre</td><td>Lokesh-TL20N</td><td>275x325<br/>mm</td><td>3</td></tr>
+                     <tr><td>CNC Turning<br/>Centre</td><td>Lokesh-TL200</td><td>270x200<br/>mm</td><td>1</td></tr>
+                     <tr><td>CNC Turning<br/>Centre</td><td>Macpower</td><td>270x350<br/>mm</td><td>1</td></tr>
+                  </tbody>
+               </table>
             </Col>
           </Row>
+
+          {/* Row 2 */}
+          <Row className="align-items-center justify-content-center mb-5 pb-4 border-bottom">
+            <Col lg={5} className="text-center mb-4 mb-lg-0">
+               <img src="https://sdn.co.in/wp-content/uploads/2025/10/LOKESH-VM-09.png" alt="Vertical Machine Centre" className="img-fluid" style={{ maxHeight: '350px' }} onError={(e) => { e.target.onError = null; e.target.src = "/gallery/9.jpeg" }} />
+            </Col>
+            <Col lg={6}>
+               <table className="table machine-table w-100 mb-0">
+                  <thead>
+                     <tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr>
+                  </thead>
+                  <tbody>
+                     <tr><td>Vertical<br/>Machine<br/>Centre</td><td>Lokesh-VM-09<br/>With 4th Axis</td><td>800x500x<br/>500 mm</td><td>2</td></tr>
+                  </tbody>
+               </table>
+            </Col>
+          </Row>
+
+          {/* Row 3 */}
+          <Row className="align-items-center justify-content-center mb-5 pb-4 border-bottom">
+            <Col lg={5} className="text-center mb-4 mb-lg-0">
+               <img src="https://sdn.co.in/wp-content/uploads/2025/10/fanuc.png" alt="Robot Cell" className="img-fluid" style={{ maxHeight: '350px' }} onError={(e) => { e.target.onError = null; e.target.src = "/gallery/9.jpeg" }} />
+            </Col>
+            <Col lg={6}>
+               <table className="table machine-table w-100 mb-0">
+                  <thead>
+                     <tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr>
+                  </thead>
+                  <tbody>
+                     <tr><td>Automation<br/>Robot Cell</td><td>Fanuc</td><td>25 Kg</td><td>2</td></tr>
+                  </tbody>
+               </table>
+            </Col>
+          </Row>
+
+          {/* Row 4 - Two tables */}
+          <Row className="justify-content-center mt-5">
+            <Col lg={5} className="mb-5 mb-lg-0">
+               <div className="text-center mb-4">
+                 <img src="https://sdn.co.in/wp-content/uploads/2025/10/thread-rolling.png" alt="Thread Rolling" className="img-fluid" style={{ maxHeight: '250px' }} onError={(e) => e.target.style.display='none'} />
+               </div>
+               <table className="table machine-table w-100 mb-0">
+                  <thead>
+                     <tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr>
+                  </thead>
+                  <tbody>
+                     <tr><td>Thread<br/>Rolling</td><td>MTE</td><td>30 Ton</td><td>1</td></tr>
+                  </tbody>
+               </table>
+            </Col>
+            <Col lg={1}></Col>
+            <Col lg={5}>
+               <div className="text-center mb-4">
+                 <img src="https://sdn.co.in/wp-content/uploads/2025/10/bandsaw.png" alt="Bandsaw" className="img-fluid" style={{ maxHeight: '250px' }} onError={(e) => e.target.style.display='none'} />
+               </div>
+               <table className="table machine-table w-100 mb-0">
+                  <thead>
+                     <tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr>
+                  </thead>
+                  <tbody>
+                     <tr><td>Bandsaw<br/>Cutting<br/>Machine</td><td>Laxson</td><td>200 mm</td><td>1</td></tr>
+                  </tbody>
+               </table>
+            </Col>
+          </Row>
+
         </Container>
       </section>
     </div>
