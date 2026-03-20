@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
 
 :root {
-  --sdn-blue: #009CD7;
+  --sdn-blue: #4169E1;
   --sdn-black: #000000;
   --sdn-text-dark: #333333;
   --sdn-text-light: #666666;
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 }
 
-/* Why SDN Cards */
+/* Why SBT Cards */
 .why-card {
   background: transparent;
   border: 1px solid rgba(255,255,255,0.1);
@@ -238,4 +238,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer-link-bottom:hover {
   color: #ccc;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 40px;
+  right: 40px;
+  background: linear-gradient(180deg, #4AE86B 0%, #22C150 100%);
+  color: #FFF;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: pulse-whatsapp 2s infinite;
+}
+
+.whatsapp-float:hover {
+  background: linear-gradient(180deg, #44D762 0%, #1FA946 100%);
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(34, 193, 80, 0.4);
+}
+
+.whatsapp-float svg {
+  fill: #FFF;
+  color: #FFF;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover svg {
+  transform: scale(1.1) rotate(5deg);
+}
+
+@keyframes pulse-whatsapp {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
 }

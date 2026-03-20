@@ -1,14 +1,24 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import heroVideo from '../assets/vecteezy_the-5-axis-cnc-milling-machine-cutting-the-metal-mold-part_70918760.mp4';
+import newVideo from '../assets/852341-hd_1920_1080_30fps.mp4';
+import ashokLogo from '../assets/Ashok-Leyland-Logo.png';
+import sundramLogo from '../assets/BMQRep_Logos_Interior_Sundram.png';
+import secheronLogo from '../assets/secheron.png';
+import fastenexlogo from '../assets/4494.jpg';
+import preFooterImg from '../assets/pre-footer images.jpg';
 
 const AboutUs = () => {
   return (
     <div>
       {/* Hero Image Section */}
       <section className="p-0 m-0">
-        <img 
-          src="/gallery/9.jpeg" 
-          alt="CNC Precision Work" 
+        <video 
+          src={heroVideo} 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
           style={{ width: '100%', maxHeight: '500px', objectFit: 'cover', display: 'block' }} 
         />
       </section>
@@ -19,22 +29,22 @@ const AboutUs = () => {
           <Row className="mb-5 align-items-center">
             <Col lg={6}>
               <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                <h2 style={{ color: '#009CD7', fontWeight: 'bold', fontSize: '36px', marginBottom: '20px' }}>WE ARE SDN</h2>
+                <h2 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '36px', marginBottom: '20px' }}>WE ARE SBT</h2>
                 <p style={{ lineHeight: '1.8', color: '#444' }}>
-                  SDN Engineering was established in 2007 by Mr. Durai, a technocrat with decades of experience in precision machining and manufacturing of automotive and general engineering components.
+                  SBT Engineering was established in 2007 by Mr. Durai, a technocrat with decades of experience in precision machining and manufacturing of automotive and general engineering components.
                 </p>
                 <p style={{ lineHeight: '1.8', color: '#444' }}>
-                  Located in the SIDCO Industrial Estate, North Phase, Pattaravakkam, Ambattur, Chennai, one of India's most prominent engineering hubs, SDN Engineering specializes in CNC turning, VMC machining, thread rolling, and automation-based component production.
+                  Located in the SIDCO Industrial Estate, North Phase, Pattaravakkam, Ambattur, Chennai, one of India's most prominent engineering hubs, SBT Engineering specializes in CNC turning, VMC machining, thread rolling, and automation-based component production.
                 </p>
                 <p style={{ lineHeight: '1.8', color: '#444' }}>
-                  Our facility is equipped with advanced machinery, including CNC turning centers, VMCs with 4th axis, robotic handling systems, and precision inspection tools, enabling us to deliver complex machined components with consistent quality and close tolerances. SDN Engineering currently operates 70% capacity utilization, with significant potential for expansion to meet new customer demands.
+                  Our facility is equipped with advanced machinery, including CNC turning centers, VMCs with 4th axis, robotic handling systems, and precision inspection tools, enabling us to deliver complex machined components with consistent quality and close tolerances. SBT Engineering currently operates 70% capacity utilization, with significant potential for expansion to meet new customer demands.
                 </p>
               </motion.div>
             </Col>
             <Col lg={6} className="text-center">
               <motion.img 
                 initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
-                src="https://sdn.co.in/wp-content/uploads/2025/10/LOKESH-VML-1000.png" 
+                src="https://5.imimg.com/data5/SELLER/Default/2022/1/DF/BA/OO/120893411/cnc-turning-machine-flat-bed-1000x1000.jpeg" 
                 alt="Lokesh VML 1000" 
                 className="img-fluid" 
                 style={{ maxHeight: '400px' }} 
@@ -46,9 +56,9 @@ const AboutUs = () => {
           <Row className="mb-5 align-items-center flex-lg-row-reverse">
             <Col lg={6}>
               <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                <h2 style={{ color: '#009CD7', fontWeight: 'bold', fontSize: '36px', marginBottom: '20px' }}>WHAT WE DO</h2>
+                <h2 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '36px', marginBottom: '20px' }}>WHAT WE DO</h2>
                 <p style={{ lineHeight: '1.8', color: '#444' }}>
-                  At SDN Engineering, we specialize in delivering end-to-end precision machining solutions tailored to the evolving needs of our customers. Our core strength lies in the manufacturing of high-precision machined components and sub-assemblies that demand accuracy, repeatability, and superior finish. Using advanced CNC turning centers, VMCs with 4th-axis capability, thread rolling machines, and robotic automation, we ensure exceptional productivity and quality at every stage of production.
+                  At SBT Engineering, we specialize in delivering end-to-end precision machining solutions tailored to the evolving needs of our customers. Our core strength lies in the manufacturing of high-precision machined components and sub-assemblies that demand accuracy, repeatability, and superior finish. Using advanced CNC turning centers, VMCs with 4th-axis capability, thread rolling machines, and robotic automation, we ensure exceptional productivity and quality at every stage of production.
                 </p>
                 <p style={{ lineHeight: '1.8', color: '#444' }}>
                   From concept development to final delivery, we manage the complete process in-house — including material sourcing, machining, inspection, and assembly. This integrated approach allows us to maintain complete control over quality, timelines, and costs, resulting in reliable products that perform consistently in real-world applications.
@@ -58,7 +68,7 @@ const AboutUs = () => {
             <Col lg={6} className="text-center">
               <motion.img 
                 initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
-                src="https://sdn.co.in/wp-content/uploads/2025/10/LOKESH-TL160.png" 
+                src="https://5.imimg.com/data5/SELLER/Default/2021/4/RS/BW/SQ/17685/tl160-series-1000x1000.jpg" 
                 alt="Lokesh TL160" 
                 className="img-fluid" 
                 style={{ maxHeight: '350px' }} 
@@ -73,7 +83,7 @@ const AboutUs = () => {
       <section className="py-5" style={{ backgroundColor: '#fff' }}>
         <Container>
           <div className="text-center mb-5">
-            <h2 style={{ color: '#009CD7', fontWeight: 'bold', fontSize: '36px' }}>CERTIFICATIONS AND PATENTS</h2>
+            <h2 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '36px' }}>CERTIFICATIONS AND PATENTS</h2>
           </div>
           <Row className="align-items-center mb-5 justify-content-center">
             <Col md={3} className="text-center mb-4 mb-md-0">
@@ -84,55 +94,65 @@ const AboutUs = () => {
             </Col>
             <Col md={5}>
               <p style={{ fontSize: '14px', lineHeight: '1.8', color: '#333' }}>
-                As an ISO 9001:2015 certified company, SDN Engineering is committed to achieving the highest standards of precision and reliability in every component we manufacture. Our strong quality system, advanced CNC and VMC technology, and automation ensure consistent, defect-free production. Continuous improvement and innovation drive us to deliver superior value and performance to every customer.
+                As an ISO 9001:2015 certified company, SBT Engineering is committed to achieving the highest standards of precision and reliability in every component we manufacture. Our strong quality system, advanced CNC and VMC technology, and automation ensure consistent, defect-free production. Continuous improvement and innovation drive us to deliver superior value and performance to every customer.
               </p>
             </Col>
           </Row>
 
-          <Row className="text-center g-3 mb-5">
+          <Row className="text-center g-3 mb-5 align-items-stretch mx-auto justify-content-center" style={{ maxWidth: '950px' }}>
             <Col lg={3} md={6}>
-               <div style={{ backgroundColor: '#7BC1E8', padding: '25px', borderRadius: '10px', color: '#fff' }}>
-                  <div className="mb-2" style={{ color: '#000', fontWeight: 'bold' }}>Annual Turnover:</div>
-                  <div style={{ fontWeight: 'bold', fontSize: '18px' }}>2.50 - 3.00Crores</div>
+               <div style={{ backgroundColor: '#4169E1', padding: '15px 10px', border: '1px solid #4169E1', borderRadius: '10px', color: '#fff', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', boxShadow: '0 4px 10px rgba(0,0,0,0.15)' }}>
+                  <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>Annual Turnover:</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '16px' }}>2.50 &ndash; 3.00Crores</div>
                </div>
             </Col>
             <Col lg={3} md={6}>
-               <div style={{ backgroundColor: '#7BC1E8', padding: '25px', borderRadius: '10px', color: '#fff' }}>
-                  <div className="mb-2" style={{ color: '#000', fontWeight: 'bold' }}>No.of Employees</div>
-                  <div style={{ fontWeight: 'bold', fontSize: '18px' }}>25-30 Employees</div>
+               <div style={{ backgroundColor: '#4169E1', padding: '15px 10px', border: '1px solid #4169E1', borderRadius: '10px', color: '#fff', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', boxShadow: '0 4px 10px rgba(0,0,0,0.15)' }}>
+                  <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>No.of Employees</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '16px' }}>25-30 Employees</div>
                </div>
             </Col>
             <Col lg={3} md={6}>
-               <div style={{ backgroundColor: '#7BC1E8', padding: '25px', borderRadius: '10px', color: '#fff' }}>
-                  <div className="mb-2" style={{ color: '#000', fontWeight: 'bold' }}>Annual Turnover with<br/>Sister Concern:</div>
-                  <div style={{ fontWeight: 'bold', fontSize: '18px' }}>14.0-15.0 Crores</div>
+               <div style={{ backgroundColor: '#4169E1', padding: '15px 10px', border: '1px solid #4169E1', borderRadius: '10px', color: '#fff', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', boxShadow: '0 4px 10px rgba(0,0,0,0.15)' }}>
+                  <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>Annual Turnover with Sister Concern:</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '16px' }}>14.0-15.0 Crores</div>
                </div>
             </Col>
             <Col lg={3} md={6}>
-               <div style={{ backgroundColor: '#7BC1E8', padding: '25px', borderRadius: '10px', color: '#fff' }}>
-                  <div className="mb-2" style={{ color: '#000', fontWeight: 'bold' }}>GSTIN</div>
-                  <div style={{ fontWeight: 'bold', fontSize: '18px' }}>33AKMPR<br/>8857J1ZC</div>
+               <div style={{ backgroundColor: '#4169E1', padding: '15px 10px', border: '1px solid #4169E1', borderRadius: '10px', color: '#fff', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', boxShadow: '0 4px 10px rgba(0,0,0,0.15)' }}>
+                  <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>GSTIN</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '16px' }}>33AKMPR<br/>8857J1ZC</div>
                </div>
             </Col>
           </Row>
 
-          <div style={{ height: '350px', backgroundImage: "url('https://sdn.co.in/wp-content/uploads/2025/10/shutterstock_1492926674-1-2.png')", backgroundSize: 'cover', backgroundPosition: 'center', marginBottom: '80px' }}>
+          {/* New Video Section */}
+          <div style={{ maxWidth: '950px', margin: '20px auto 60px auto' }}>
+            <video 
+              src={newVideo} 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              style={{ width: '100%', height: 'auto', display: 'block', boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.2)' }} 
+            />
           </div>
-          
+
+           
           {/* Vision / Mission */}
-          <Row className="g-4 mb-5">
+          <Row className="g-4 mb-5 align-items-stretch">
             <Col md={6}>
-               <div style={{ border: '1px solid #ddd', padding: '50px 30px', textAlign: 'center', height: '100%' }}>
-                  <h2 style={{ color: '#009CD7', fontWeight: 'bold', marginBottom: '20px' }}>OUR VISION</h2>
-                  <p style={{ fontSize: '14px', lineHeight: '1.8', color: '#444' }}>
+               <div style={{ backgroundColor: '#fff', border: '1px solid #ececec', padding: '130px 60px', height: '100%', boxShadow: '0 4px 12px rgba(0,0,0,0.05)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                  <h2 style={{ color: '#4169E1', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', fontSize: '40px' }}>OUR VISION</h2>
+                  <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#333', textAlign: 'left', margin: 0 }}>
                      Our vision is to become a recognized industry leader by our customers in component / P roto part manufacturing and commitment to excellence in the markets we serve and ensure business growth in a manner that serves the interest of all our stakeholders.
                   </p>
                </div>
             </Col>
             <Col md={6}>
-               <div style={{ border: '1px solid #ddd', padding: '50px 30px', textAlign: 'center', height: '100%' }}>
-                  <h2 style={{ color: '#009CD7', fontWeight: 'bold', marginBottom: '20px' }}>OUR MISSION</h2>
-                  <p style={{ fontSize: '14px', lineHeight: '1.8', color: '#444' }}>
+               <div style={{ backgroundColor: '#fff', border: '1px solid #ececec', padding: '130px 60px', height: '100%', boxShadow: '0 4px 12px rgba(0,0,0,0.05)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                  <h2 style={{ color: '#4169E1', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', fontSize: '40px' }}>OUR MISSION</h2>
+                  <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#333', textAlign: 'left', margin: 0 }}>
                      Our mission is to create consistant value for our customers by delivering highest quality of products with providing complete solutions like full finished parts
                   </p>
                </div>
@@ -141,20 +161,20 @@ const AboutUs = () => {
           
           {/* Customers */}
           <div className="text-center mb-5">
-            <h2 style={{ color: '#009CD7', fontWeight: 'bold', fontSize: '24px', marginBottom: '30px' }}>OUR CUSTOMERS</h2>
+            <h2 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '24px', marginBottom: '30px' }}>OUR CUSTOMERS</h2>
             <Row className="justify-content-center align-items-center g-4">
-               {/* Placeholders for logos, styled like the SS */}
-               <Col xs={6} md={3}><img src="https://sdn.co.in/wp-content/uploads/2025/10/ashok-leyland.png" alt="Ashok Leyland" className="img-fluid" style={{ maxHeight: '60px' }} onError={(e) => e.target.style.display='none'} /></Col>
-               <Col xs={6} md={3}><img src="https://sdn.co.in/wp-content/uploads/2025/10/fastenex.png" alt="FASTENEX" className="img-fluid" style={{ maxHeight: '60px' }} onError={(e) => e.target.style.display='none'} /></Col>
-               <Col xs={6} md={3}><img src="https://sdn.co.in/wp-content/uploads/2025/10/sundram.png" alt="Sundram Fasteners" className="img-fluid" style={{ maxHeight: '60px' }} onError={(e) => e.target.style.display='none'} /></Col>
-               <Col xs={6} md={3}><img src="https://sdn.co.in/wp-content/uploads/2025/10/secheron.png" alt="Secheron" className="img-fluid" style={{ maxHeight: '60px' }} onError={(e) => e.target.style.display='none'} /></Col>
+               {/* Local uploaded logos */}
+               <Col xs={6} md={3}><img src={ashokLogo} alt="Ashok Leyland" className="img-fluid" style={{ maxHeight: '60px' }} /></Col>
+               <Col xs={6} md={3}><img src={fastenexlogo} alt="Fastenex" className="img-fluid" style={{ maxHeight: '60px' }} /></Col>
+               <Col xs={6} md={3}><img src={sundramLogo} alt="Sundram Fasteners" className="img-fluid" style={{ maxHeight: '60px' }} /></Col>
+               <Col xs={6} md={3}><img src={secheronLogo} alt="Secheron" className="img-fluid" style={{ maxHeight: '60px' }} /></Col>
             </Row>
           </div>
         </Container>
       </section>
 
       {/* Pre-footer Image Section */}
-      <div style={{ height: '400px', backgroundImage: "url('https://sdn.co.in/wp-content/uploads/2025/10/shutterstock_1492926674-1-2.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div style={{ height: '400px', backgroundImage: `url("${preFooterImg}")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       </div>
     </div>
   );

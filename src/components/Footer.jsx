@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       {/* Top Footer (Contact) */}
-      <div className="footer-top" style={{ backgroundColor: '#009CD7', color: '#fff', padding: '50px 0' }}>
+      <div className="footer-top" style={{ backgroundColor: '#4169E1', color: '#fff', padding: '50px 0' }}>
         <Container>
           <Row className="align-items-start g-4 text-start">
             <Col lg={3} md={6}>

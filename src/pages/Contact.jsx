@@ -22,7 +22,7 @@ const Contact = () => {
         <Container>
           <Row className="g-5">
             <Col lg={5}>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -30,7 +30,7 @@ const Contact = () => {
               >
                 <h3 className="display-6 fw-bolder mb-4" style={{ color: 'var(--premium-dark)' }}>Get In Touch</h3>
                 <p className="text-muted fs-5 mb-5 lh-lg">Have a question or need a quote? Reach out to us directly or fill out the form, and our sales team will get back to you shortly.</p>
-                
+
                 <div className="d-flex align-items-center mb-5">
                   <div className="premium-card-icon me-4 mb-0" style={{ width: '60px', height: '60px', fontSize: '24px' }}>
                     <FaPhoneAlt />
@@ -57,14 +57,14 @@ const Contact = () => {
                   </div>
                   <div>
                     <h5 className="mb-1 fw-bold" style={{ color: 'var(--premium-dark)' }}>Address</h5>
-                    <p className="text-muted mb-0 fs-5">123 Industrial Estate<br/>Tech City, 500001, India</p>
+                    <p className="text-muted mb-0 fs-5">123 Industrial Estate<br />Tech City, 500001, India</p>
                   </div>
                 </div>
               </motion.div>
             </Col>
 
             <Col lg={7}>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
