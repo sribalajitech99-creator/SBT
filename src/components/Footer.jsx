@@ -20,7 +20,7 @@ const Footer = () => {
             <Col lg={3} md={6}>
               <div style={{ textTransform: 'uppercase', fontWeight: 700, fontSize: '18px', marginBottom: '20px' }}>MARKETING:</div>
               <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
-                97101 11579, 7305484528<br />
+                89257 46458, 7305484528<br />
                 marketing@sbt.co.in
               </div>
             </Col>
