@@ -133,7 +133,7 @@ const Home = () => {
         
         <Container className="position-relative" style={{ zIndex: 1 }}>
           <div className="text-center mb-5 mt-5">
-            <h2 style={{ color: '#fff', fontSize: '64px', fontFamily: '"Roboto", Sans-serif', fontWeight: 600, letterSpacing: '1px' }}>WHY SDN</h2>
+            <h2 style={{ color: '#fff', fontSize: '64px', fontFamily: '"Roboto", Sans-serif', fontWeight: 600, letterSpacing: '1px' }}>WHY SBT</h2>
           </div>
             
           <Row className="g-4 mt-4">
@@ -151,7 +151,7 @@ const Home = () => {
                 <img src="https://sdn.co.in/wp-content/uploads/2025/10/Asset-2sapi-150x150-1.png" style={{ width: '99px', marginBottom: '15px' }} alt="Timely Delivery Icon" />
                 <h3 style={{ color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '15px' }}>Timely Delivery</h3>
                 <p style={{ color: '#fff', fontSize: '16px', fontFamily: '"AR One Sans", Sans-serif', lineHeight: '1.8rem', fontWeight: 400 }}>
-                  With optimized production planning and a customer-specific scheduling system, SDN ensures on-time delivery of every batch. Our efficient supply chain and strong vendor network enable us to meet tight timelines without compromising quality.
+                  With optimized production planning and a customer-specific scheduling system, SBT ensures on-time delivery of every batch. Our efficient supply chain and strong vendor network enable us to meet tight timelines without compromising quality.
                 </p>
               </div>
             </Col>
@@ -160,7 +160,7 @@ const Home = () => {
                 <img src="https://sdn.co.in/wp-content/uploads/2025/10/Asset-4sapi-150x150-1.png" style={{ width: '99px', marginBottom: '15px' }} alt="Precision Icon" />
                 <h3 style={{ color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '15px' }}>Precision Manufacturing</h3>
                 <p style={{ color: '#fff', fontSize: '16px', fontFamily: '"AR One Sans", Sans-serif', lineHeight: '1.8rem', fontWeight: 400 }}>
-                  At SDN Engineering, precision is our foundation. Equipped with advanced CNC turning centers, VMCs, thread rolling machines, and robotic automation, we manufacture critical components with close tolerances and superior finish — ensuring performance, accuracy, and reliability in every part.
+                  At Sri Balaji Tech, precision is our foundation. Equipped with advanced CNC turning centers, VMCs, thread rolling machines, and robotic automation, we manufacture critical components with close tolerances and superior finish — ensuring performance, accuracy, and reliability in every part.
                 </p>
               </div>
             </Col>
