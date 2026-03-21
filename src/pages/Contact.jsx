@@ -79,7 +79,7 @@ const Contact = () => {
                 <p className="text-muted fs-5 mb-5 lh-lg">Have a question or need a quote? Reach out to us directly or fill out the form, and our sales team will get back to you shortly.</p>
 
                 <div className="d-flex align-items-center mb-5">
-                  <div className="premium-card-icon me-4 mb-0" style={{ width: '60px', height: '60px', fontSize: '24px' }}>
+                  <div className="premium-card-icon me-4 mb-0" style={{ width: '60px', height: '60px', fontSize: '24px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', borderRadius: '12px' }}>
                     <FaPhoneAlt />
                   </div>
                   <div>
@@ -89,7 +89,7 @@ const Contact = () => {
                 </div>
 
                 <div className="d-flex align-items-center mb-5">
-                  <div className="premium-card-icon me-4 mb-0" style={{ width: '60px', height: '60px', fontSize: '24px' }}>
+                  <div className="premium-card-icon me-4 mb-0" style={{ width: '60px', height: '60px', fontSize: '24px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', borderRadius: '12px' }}>
                     <FaEnvelope />
                   </div>
                   <div>
@@ -99,7 +99,7 @@ const Contact = () => {
                 </div>
 
                 <div className="d-flex align-items-center mb-5">
-                  <div className="premium-card-icon me-4 mb-0" style={{ width: '60px', height: '60px', fontSize: '24px' }}>
+                  <div className="premium-card-icon me-4 mb-0" style={{ width: '60px', height: '60px', fontSize: '24px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', borderRadius: '12px' }}>
                     <FaMapMarkerAlt />
                   </div>
                   <div>
@@ -117,6 +117,13 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 className="premium-card p-5 border-0"
+                style={{
+                  boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
+                  borderRadius: '16px',
+                  background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%)',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)'
+                }}
               >
                 <h4 className="fw-bolder mb-4 fs-3" style={{ color: 'var(--premium-dark)' }}>Send us a Message</h4>
                 <Form onSubmit={handleSubmit}>
