@@ -13,7 +13,7 @@ const Contact = () => {
   });
   const [status, setStatus] = useState(null); // null | 'submitting' | 'opened'
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const required = [
@@ -45,9 +45,42 @@ const Contact = () => {
     ].join('\n');
 
     const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     setStatus('submitting');
-    window.location.href = mailto;
-    setStatus('opened');
+
+    // Primary path: formsubmit.co as server-side e-mail dispatch
+    try {
+      const payload = new URLSearchParams();
+      payload.append('_subject', `SDN Website Inquiry: ${subject}`);
+      payload.append('_captcha', 'false');
+      payload.append('name', name || '-');
+      payload.append('email', form.email.trim());
+      payload.append('subject', subject);
+      payload.append('message', form.message.trim());
+
+      const response = await fetch('https://formsubmit.co/ajax/sribalajitech99@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: payload.toString(),
+      });
+
+      if (!response.ok) throw new Error(`Form submission failed: ${response.status}`);
+
+      const json = await response.json();
+      alert('Thanks for choosing us! Your form is submitted successfully.');
+      setForm({ firstName: '', lastName: '', email: '', subject: '', message: '' });
+      setStatus('opened');
+
+      return;
+    } catch (error) {
+      console.warn('FormSubmit.co failed, falling back to mailto:', error);
+      alert('Direct submission failed. Opening your email client as fallback. Please hit send in your email app.');
+      window.location.href = mailto;
+      setStatus('opened');
+      return;
+    } finally {
+      setStatus(null);
+    }
   };
 
   return (
@@ -103,7 +136,7 @@ const Contact = () => {
                   </motion.div>
                   <div>
                     <h5 className="mb-1 fw-bold" style={{ color: 'var(--premium-dark)' }}>Phone</h5>
-                    <p className="text-muted mb-0 fs-5">+91 97101 11579, +91 89257 46458</p>
+                    <p className="text-muted mb-0 fs-5">+91 89257 46458</p>
                   </div>
                 </div>
 
