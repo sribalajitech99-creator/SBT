@@ -84,18 +84,42 @@ const Home = () => {
                 <img src="https://sdn.co.in/wp-content/uploads/2025/10/shutterstock_1020591757-1.png" alt="CNC Process" style={{ width: '100%', height: 'auto', objectFit: 'cover', marginBottom: '30px' }} />
                 
                 {/* Stats Box properly placed within the left column */}
-                <div style={{
-                  backgroundColor: '#fff',
-                  padding: '30px',
-                  boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
-                  marginTop: '300px',
-                  position: 'relative',
-                  zIndex: 10,
-                  borderRadius: '16px',
-                  background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%)',
-                  backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)'
-                }}>
+                <motion.div
+                  style={{
+                    backgroundColor: '#fff',
+                    padding: '30px',
+                    boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
+                    marginTop: '300px',
+                    position: 'relative',
+                    zIndex: 10,
+                    borderRadius: '20px',
+                    background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
+                    backdropFilter: 'blur(20px)',
+                    border: '1px solid rgba(255, 255, 255, 0.3)',
+                    position: 'relative',
+                    overflow: 'hidden'
+                  }}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  whileHover={{
+                    scale: 1.02,
+                    boxShadow: '0 35px 70px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
+                    transition: { duration: 0.3 }
+                  }}
+                  className="premium-card-enhanced"
+                >
+                  <div style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: '4px',
+                    background: 'linear-gradient(90deg, #009CD7 0%, #4169E1 50%, #009CD7 100%)',
+                    backgroundSize: '200% 100%',
+                    animation: 'shimmer 3s ease-in-out infinite'
+                  }}></div>
                   <div className="d-flex flex-wrap text-start w-100">
                     <div style={{ flex: '1 1 50%', paddingRight: '15px', marginBottom: '25px' }}>
                        <div style={{ fontSize: '16px', fontFamily: '"Roboto", Sans-serif', color: '#000', fontWeight: '500', lineHeight: '1.4' }}>
@@ -122,7 +146,7 @@ const Home = () => {
                        </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </motion.div>
             </Col>
 

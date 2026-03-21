@@ -86,6 +86,12 @@ const Products = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  whileHover={{
+                    scale: 1.02,
+                    boxShadow: '0 35px 70px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
+                    transition: { duration: 0.3 }
+                  }}
                   style={{
                     border: '1px solid #ddd',
                     padding: '15px',
@@ -94,13 +100,25 @@ const Products = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
-                    borderRadius: '16px',
-                    background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%)',
-                    backdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)'
+                    boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
+                    borderRadius: '20px',
+                    background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
+                    backdropFilter: 'blur(20px)',
+                    border: '1px solid rgba(255, 255, 255, 0.3)',
+                    position: 'relative',
+                    overflow: 'hidden'
                   }}
                 >
+                  <div style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: '4px',
+                    background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
+                    backgroundSize: '200% 100%',
+                    animation: 'shimmer 3s ease-in-out infinite'
+                  }}></div>
                   <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '200px', marginBottom: '20px' }}>
                     <img
                       src={product.img}
@@ -121,10 +139,42 @@ const Products = () => {
       {/* CTA Section */}
       <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
         <Container className="text-center">
-          <h2 style={{ fontWeight: 'bold', fontSize: '32px', marginBottom: '30px' }}>Send us an enquiry of your requirements</h2>
-          <a href="/contact" className="btn" style={{ backgroundColor: '#4169E1', color: '#fff', padding: '12px 30px', fontWeight: 'bold', borderRadius: '0', textDecoration: 'none' }}>
-            ENQUIRE NOW
-          </a>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            style={{
+              boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
+              borderRadius: '20px',
+              background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
+              backdropFilter: 'blur(20px)',
+              border: '1px solid rgba(255, 255, 255, 0.3)',
+              padding: '40px',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            whileHover={{
+              scale: 1.01,
+              boxShadow: '0 35px 70px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
+              transition: { duration: 0.3 }
+            }}
+          >
+            <div style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              height: '4px',
+              background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
+              backgroundSize: '200% 100%',
+              animation: 'shimmer 3s ease-in-out infinite'
+            }}></div>
+            <h2 style={{ fontWeight: 'bold', fontSize: '32px', marginBottom: '30px' }}>Send us an enquiry of your requirements</h2>
+            <a href="/contact" className="btn" style={{ backgroundColor: '#4169E1', color: '#fff', padding: '12px 30px', fontWeight: 'bold', borderRadius: '0', textDecoration: 'none' }}>
+              ENQUIRE NOW
+            </a>
+          </motion.div>
         </Container>
       </section>
     </div>

@@ -119,24 +119,48 @@ const AboutUs = () => {
 
           <Row className="text-center g-3 mb-5 align-items-stretch mx-auto justify-content-center" style={{ maxWidth: '950px' }}>
             <Col lg={3} md={6}>
-               <div style={{
-                 backgroundColor: '#4169E1',
-                 padding: '15px 10px',
-                 border: '1px solid #4169E1',
-                 borderRadius: '10px',
-                 color: '#fff',
-                 height: '100%',
-                 display: 'flex',
-                 flexDirection: 'column',
-                 justifyContent: 'center',
-                 boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
-                 background: 'linear-gradient(135deg, #4169E1 0%, #5a7ce8 100%)',
-                 backdropFilter: 'blur(10px)',
-                 border: '1px solid rgba(255, 255, 255, 0.2)'
-               }}>
+               <motion.div
+                 style={{
+                   backgroundColor: '#4169E1',
+                   padding: '15px 10px',
+                   border: '1px solid #4169E1',
+                   borderRadius: '16px',
+                   color: '#fff',
+                   height: '100%',
+                   display: 'flex',
+                   flexDirection: 'column',
+                   justifyContent: 'center',
+                   boxShadow: '0 25px 50px rgba(65, 105, 225, 0.3), 0 15px 35px rgba(0, 156, 215, 0.2), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
+                   background: 'linear-gradient(135deg, #4169E1 0%, #5a7ce8 50%, #009CD7 100%)',
+                   backdropFilter: 'blur(20px)',
+                   border: '1px solid rgba(255, 255, 255, 0.2)',
+                   position: 'relative',
+                   overflow: 'hidden'
+                 }}
+                 initial={{ opacity: 0, y: 20 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 viewport={{ once: true }}
+                 transition={{ duration: 0.6, delay: 0.1 }}
+                 whileHover={{
+                   scale: 1.05,
+                   boxShadow: '0 35px 70px rgba(65, 105, 225, 0.4), 0 20px 45px rgba(0, 156, 215, 0.3), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
+                   transition: { duration: 0.3 }
+                 }}
+                 className="premium-card-float"
+               >
+                 <div style={{
+                   position: 'absolute',
+                   top: 0,
+                   left: 0,
+                   right: 0,
+                   height: '3px',
+                   background: 'linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.5) 50%, #fff 100%)',
+                   backgroundSize: '200% 100%',
+                   animation: 'shimmer 2s ease-in-out infinite'
+                 }}></div>
                   <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>Annual Turnover:</div>
                   <div style={{ fontWeight: 'bold', fontSize: '16px' }}>2.50 &ndash; 3.00Crores</div>
-               </div>
+               </motion.div>
             </Col>
             <Col lg={3} md={6}>
                <div style={{
@@ -225,46 +249,94 @@ const AboutUs = () => {
           {/* Vision / Mission */}
           <Row className="g-4 mb-5 align-items-stretch">
             <Col md={6}>
-               <div style={{
-                 backgroundColor: '#fff',
-                 border: '1px solid #ececec',
-                 padding: '130px 60px',
-                 height: '100%',
-                 boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
-                 display: 'flex',
-                 flexDirection: 'column',
-                 justifyContent: 'center',
-                 borderRadius: '16px',
-                 background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%)',
-                 backdropFilter: 'blur(10px)',
-                 border: '1px solid rgba(255, 255, 255, 0.2)'
-               }}>
+               <motion.div
+                 style={{
+                   backgroundColor: '#fff',
+                   border: '1px solid #ececec',
+                   padding: '130px 60px',
+                   height: '100%',
+                   boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
+                   display: 'flex',
+                   flexDirection: 'column',
+                   justifyContent: 'center',
+                   borderRadius: '20px',
+                   background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
+                   backdropFilter: 'blur(20px)',
+                   border: '1px solid rgba(255, 255, 255, 0.3)',
+                   position: 'relative',
+                   overflow: 'hidden'
+                 }}
+                 initial={{ opacity: 0, x: -30 }}
+                 whileInView={{ opacity: 1, x: 0 }}
+                 viewport={{ once: true }}
+                 transition={{ duration: 0.8, delay: 0.2 }}
+                 whileHover={{
+                   scale: 1.02,
+                   boxShadow: '0 35px 70px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
+                   transition: { duration: 0.3 }
+                 }}
+                 className="premium-card-enhanced"
+               >
+                 <div style={{
+                   position: 'absolute',
+                   top: 0,
+                   left: 0,
+                   right: 0,
+                   height: '4px',
+                   background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
+                   backgroundSize: '200% 100%',
+                   animation: 'shimmer 3s ease-in-out infinite'
+                 }}></div>
                   <h2 style={{ color: '#4169E1', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', fontSize: '40px' }}>OUR VISION</h2>
                   <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#333', textAlign: 'left', margin: 0 }}>
                      Our vision is to become a recognized industry leader by our customers in component / P roto part manufacturing and commitment to excellence in the markets we serve and ensure business growth in a manner that serves the interest of all our stakeholders.
                   </p>
-               </div>
+               </motion.div>
             </Col>
             <Col md={6}>
-               <div style={{
-                 backgroundColor: '#fff',
-                 border: '1px solid #ececec',
-                 padding: '130px 60px',
-                 height: '100%',
-                 boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
-                 display: 'flex',
-                 flexDirection: 'column',
-                 justifyContent: 'center',
-                 borderRadius: '16px',
-                 background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%)',
-                 backdropFilter: 'blur(10px)',
-                 border: '1px solid rgba(255, 255, 255, 0.2)'
-               }}>
+               <motion.div
+                 style={{
+                   backgroundColor: '#fff',
+                   border: '1px solid #ececec',
+                   padding: '130px 60px',
+                   height: '100%',
+                   boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
+                   display: 'flex',
+                   flexDirection: 'column',
+                   justifyContent: 'center',
+                   borderRadius: '20px',
+                   background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
+                   backdropFilter: 'blur(20px)',
+                   border: '1px solid rgba(255, 255, 255, 0.3)',
+                   position: 'relative',
+                   overflow: 'hidden'
+                 }}
+                 initial={{ opacity: 0, x: 30 }}
+                 whileInView={{ opacity: 1, x: 0 }}
+                 viewport={{ once: true }}
+                 transition={{ duration: 0.8, delay: 0.4 }}
+                 whileHover={{
+                   scale: 1.02,
+                   boxShadow: '0 35px 70px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
+                   transition: { duration: 0.3 }
+                 }}
+                 className="premium-card-enhanced"
+               >
+                 <div style={{
+                   position: 'absolute',
+                   top: 0,
+                   left: 0,
+                   right: 0,
+                   height: '4px',
+                   background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
+                   backgroundSize: '200% 100%',
+                   animation: 'shimmer 3s ease-in-out infinite'
+                 }}></div>
                   <h2 style={{ color: '#4169E1', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', fontSize: '40px' }}>OUR MISSION</h2>
                   <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#333', textAlign: 'left', margin: 0 }}>
                      Our mission is to create consistant value for our customers by delivering highest quality of products with providing complete solutions like full finished parts
                   </p>
-               </div>
+               </motion.div>
             </Col>
           </Row>
           

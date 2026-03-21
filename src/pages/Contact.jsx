@@ -79,9 +79,28 @@ const Contact = () => {
                 <p className="text-muted fs-5 mb-5 lh-lg">Have a question or need a quote? Reach out to us directly or fill out the form, and our sales team will get back to you shortly.</p>
 
                 <div className="d-flex align-items-center mb-5">
-                  <div className="premium-card-icon me-4 mb-0" style={{ width: '60px', height: '60px', fontSize: '24px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', borderRadius: '12px' }}>
+                  <motion.div
+                    className="premium-card-icon me-4 mb-0 d-flex align-items-center justify-content-center"
+                    style={{
+                      width: '60px',
+                      height: '60px',
+                      fontSize: '24px',
+                      boxShadow: '0 12px 24px rgba(0, 0, 0, 0.15), 0 6px 12px rgba(0, 0, 0, 0.1)',
+                      borderRadius: '16px',
+                      background: 'linear-gradient(135deg, #009CD7 0%, #4169E1 100%)',
+                      color: 'white',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
+                    }}
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: '0 20px 40px rgba(0, 156, 215, 0.3), 0 10px 20px rgba(65, 105, 225, 0.2)',
+                      transition: { duration: 0.3 }
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                  >
                     <FaPhoneAlt />
-                  </div>
+                  </motion.div>
                   <div>
                     <h5 className="mb-1 fw-bold" style={{ color: 'var(--premium-dark)' }}>Phone</h5>
                     <p className="text-muted mb-0 fs-5">+91 97101 11579, +91 89257 46458</p>
@@ -89,9 +108,28 @@ const Contact = () => {
                 </div>
 
                 <div className="d-flex align-items-center mb-5">
-                  <div className="premium-card-icon me-4 mb-0" style={{ width: '60px', height: '60px', fontSize: '24px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', borderRadius: '12px' }}>
+                  <motion.div
+                    className="premium-card-icon me-4 mb-0 d-flex align-items-center justify-content-center"
+                    style={{
+                      width: '60px',
+                      height: '60px',
+                      fontSize: '24px',
+                      boxShadow: '0 12px 24px rgba(0, 0, 0, 0.15), 0 6px 12px rgba(0, 0, 0, 0.1)',
+                      borderRadius: '16px',
+                      background: 'linear-gradient(135deg, #009CD7 0%, #4169E1 100%)',
+                      color: 'white',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
+                    }}
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: '0 20px 40px rgba(0, 156, 215, 0.3), 0 10px 20px rgba(65, 105, 225, 0.2)',
+                      transition: { duration: 0.3 }
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                  >
                     <FaEnvelope />
-                  </div>
+                  </motion.div>
                   <div>
                     <h5 className="mb-1 fw-bold" style={{ color: 'var(--premium-dark)' }}>Email</h5>
                     <p className="text-muted mb-0 fs-5">sribalajitech99@gmail.com</p>
@@ -99,9 +137,28 @@ const Contact = () => {
                 </div>
 
                 <div className="d-flex align-items-center mb-5">
-                  <div className="premium-card-icon me-4 mb-0" style={{ width: '60px', height: '60px', fontSize: '24px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', borderRadius: '12px' }}>
+                  <motion.div
+                    className="premium-card-icon me-4 mb-0 d-flex align-items-center justify-content-center"
+                    style={{
+                      width: '60px',
+                      height: '60px',
+                      fontSize: '24px',
+                      boxShadow: '0 12px 24px rgba(0, 0, 0, 0.15), 0 6px 12px rgba(0, 0, 0, 0.1)',
+                      borderRadius: '16px',
+                      background: 'linear-gradient(135deg, #009CD7 0%, #4169E1 100%)',
+                      color: 'white',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
+                    }}
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: '0 20px 40px rgba(0, 156, 215, 0.3), 0 10px 20px rgba(65, 105, 225, 0.2)',
+                      transition: { duration: 0.3 }
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                  >
                     <FaMapMarkerAlt />
-                  </div>
+                  </motion.div>
                   <div>
                     <h5 className="mb-1 fw-bold" style={{ color: 'var(--premium-dark)' }}>Address</h5>
                     <p className="text-muted mb-0 fs-5">SIDCO Industrial Estate, North Phase<br />Pattaravakkam, Ambattur, Chennai, India</p>
@@ -118,13 +175,30 @@ const Contact = () => {
                 transition={{ duration: 0.6 }}
                 className="premium-card p-5 border-0"
                 style={{
-                  boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
-                  borderRadius: '16px',
-                  background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%)',
-                  backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)'
+                  boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
+                  borderRadius: '20px',
+                  background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
+                  backdropFilter: 'blur(20px)',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}
+                whileHover={{
+                  scale: 1.02,
+                  boxShadow: '0 35px 70px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
+                  transition: { duration: 0.3 }
                 }}
               >
+                <div style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  height: '4px',
+                  background: 'linear-gradient(90deg, #009CD7 0%, #4169E1 50%, #009CD7 100%)',
+                  backgroundSize: '200% 100%',
+                  animation: 'shimmer 3s ease-in-out infinite'
+                }}></div>
                 <h4 className="fw-bolder mb-4 fs-3" style={{ color: 'var(--premium-dark)' }}>Send us a Message</h4>
                 <Form onSubmit={handleSubmit}>
                   <Row className="g-4">
