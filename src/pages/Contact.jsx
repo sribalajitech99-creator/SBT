@@ -1,8 +1,55 @@
+import { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
+  const [form, setForm] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+  const [status, setStatus] = useState(null); // null | 'submitting' | 'opened'
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const required = [
+      { key: 'firstName', label: 'First name' },
+      { key: 'email', label: 'Email address' },
+      { key: 'subject', label: 'Subject' },
+      { key: 'message', label: 'Message' },
+    ];
+    for (const item of required) {
+      if (!String(form[item.key] || '').trim()) {
+        alert(`Please enter: ${item.label}`);
+        return;
+      }
+    }
+
+    const to = 'sribalajitech99@gmail.com';
+    const name = `${form.firstName.trim()} ${form.lastName.trim()}`.trim();
+    const subject = form.subject.trim();
+
+    const body = [
+      `Name: ${name || '-'}`,
+      `Email: ${form.email.trim()}`,
+      '',
+      'Inquiry Details:',
+      form.message.trim(),
+      '',
+      '---',
+      'Sent from SDN-clone website contact form',
+    ].join('\n');
+
+    const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    setStatus('submitting');
+    window.location.href = mailto;
+    setStatus('opened');
+  };
+
   return (
     <div>
       <section className="page-header-premium">
@@ -11,7 +58,7 @@ const Contact = () => {
           <motion.div initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.6 }}>
             <div className="premium-badge mb-3">Get Connected</div>
             <h1 className="display-4 fw-bolder text-white mb-3">Contact <span className="text-gradient-accent">Us</span></h1>
-            <p className="lead text-muted mx-auto" style={{ maxWidth: '600px' }}>
+            <p className="lead text-white mx-auto" style={{ maxWidth: '600px' }}>
               We are ready to discuss your requirements and answer any questions you might have.
             </p>
           </motion.div>
@@ -37,7 +84,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h5 className="mb-1 fw-bold" style={{ color: 'var(--premium-dark)' }}>Phone</h5>
-                    <p className="text-muted mb-0 fs-5">+91 98765 43210</p>
+                    <p className="text-muted mb-0 fs-5">+91 97101 11579, +91 89257 46458</p>
                   </div>
                 </div>
 
@@ -47,7 +94,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h5 className="mb-1 fw-bold" style={{ color: 'var(--premium-dark)' }}>Email</h5>
-                    <p className="text-muted mb-0 fs-5">info@sbt.co.in</p>
+                    <p className="text-muted mb-0 fs-5">sribalajitech99@gmail.com</p>
                   </div>
                 </div>
 
@@ -57,7 +104,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h5 className="mb-1 fw-bold" style={{ color: 'var(--premium-dark)' }}>Address</h5>
-                    <p className="text-muted mb-0 fs-5">123 Industrial Estate<br />Tech City, 500001, India</p>
+                    <p className="text-muted mb-0 fs-5">SIDCO Industrial Estate, North Phase<br />Pattaravakkam, Ambattur, Chennai, India</p>
                   </div>
                 </div>
               </motion.div>
@@ -72,40 +119,75 @@ const Contact = () => {
                 className="premium-card p-5 border-0"
               >
                 <h4 className="fw-bolder mb-4 fs-3" style={{ color: 'var(--premium-dark)' }}>Send us a Message</h4>
-                <Form>
+                <Form onSubmit={handleSubmit}>
                   <Row className="g-4">
                     <Col md={6}>
                       <Form.Group>
                         <Form.Label className="fw-semibold text-muted">First Name</Form.Label>
-                        <Form.Control type="text" placeholder="John" className="py-3 px-4 bg-light shadow-none border-0 rounded-4" />
+                        <Form.Control
+                          type="text"
+                          placeholder="John"
+                          className="py-3 px-4 bg-light shadow-none border-0 rounded-4"
+                          value={form.firstName}
+                          onChange={(e) => setForm((p) => ({ ...p, firstName: e.target.value }))}
+                          required
+                        />
                       </Form.Group>
                     </Col>
                     <Col md={6}>
                       <Form.Group>
                         <Form.Label className="fw-semibold text-muted">Last Name</Form.Label>
-                        <Form.Control type="text" placeholder="Doe" className="py-3 px-4 bg-light shadow-none border-0 rounded-4" />
+                        <Form.Control
+                          type="text"
+                          placeholder="Doe"
+                          className="py-3 px-4 bg-light shadow-none border-0 rounded-4"
+                          value={form.lastName}
+                          onChange={(e) => setForm((p) => ({ ...p, lastName: e.target.value }))}
+                        />
                       </Form.Group>
                     </Col>
                     <Col md={12}>
                       <Form.Group>
                         <Form.Label className="fw-semibold text-muted">Email Address</Form.Label>
-                        <Form.Control type="email" placeholder="john@example.com" className="py-3 px-4 bg-light shadow-none border-0 rounded-4" />
+                        <Form.Control
+                          type="email"
+                          placeholder="john@example.com"
+                          className="py-3 px-4 bg-light shadow-none border-0 rounded-4"
+                          value={form.email}
+                          onChange={(e) => setForm((p) => ({ ...p, email: e.target.value }))}
+                          required
+                        />
                       </Form.Group>
                     </Col>
                     <Col md={12}>
                       <Form.Group>
                         <Form.Label className="fw-semibold text-muted">Subject</Form.Label>
-                        <Form.Control type="text" placeholder="Inquiry about..." className="py-3 px-4 bg-light shadow-none border-0 rounded-4" />
+                        <Form.Control
+                          type="text"
+                          placeholder="Inquiry about..."
+                          className="py-3 px-4 bg-light shadow-none border-0 rounded-4"
+                          value={form.subject}
+                          onChange={(e) => setForm((p) => ({ ...p, subject: e.target.value }))}
+                          required
+                        />
                       </Form.Group>
                     </Col>
                     <Col md={12}>
                       <Form.Group>
                         <Form.Label className="fw-semibold text-muted">Message</Form.Label>
-                        <Form.Control as="textarea" rows={5} placeholder="Your message details..." className="py-3 px-4 bg-light shadow-none border-0 rounded-4" />
+                        <Form.Control
+                          as="textarea"
+                          rows={5}
+                          placeholder="Your message details..."
+                          className="py-3 px-4 bg-light shadow-none border-0 rounded-4"
+                          value={form.message}
+                          onChange={(e) => setForm((p) => ({ ...p, message: e.target.value }))}
+                          required
+                        />
                       </Form.Group>
                     </Col>
                     <Col md={12} className="mt-5">
-                      <Button className="btn-premium w-100 py-3 fs-5" type="submit">
+                      <Button className="btn-premium w-100 py-3 fs-5" type="submit" disabled={status === 'submitting'}>
                         SEND MESSAGE
                       </Button>
                     </Col>

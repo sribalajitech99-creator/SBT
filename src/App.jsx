@@ -7,6 +7,7 @@ import Products from './pages/Products';
 import Capabilities from './pages/Capabilities';
 import SisterConcern from './pages/SisterConcern';
 import Contact from './pages/Contact';
+import Sitemap from './pages/Sitemap';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/capabilities" element={<Capabilities />} />
           <Route path="/sister-concern" element={<SisterConcern />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/sitemap" element={<Sitemap />} />
         </Routes>
       </main>
       <Footer />

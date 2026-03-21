@@ -20,9 +20,43 @@ const Home = () => {
                 <div style={{ fontFamily: '"Open Sans", Sans-serif', fontSize: '28px', fontWeight: 600, lineHeight: '60px', color: '#fff', marginBottom: '35px' }}>
                   AUTOMATED PRODUCTION TECHNOLOGY WITH ROBOTIC
                 </div>
-                <Link to="/capabilities" style={{ backgroundColor: '#009CD7', color: '#fff', textDecoration: 'none', padding: '20px 50px', borderRadius: '30px', fontFamily: '"Roboto", Sans-serif', fontWeight: 500, fontSize: '18px', display: 'inline-block', transition: '0.3s' }}>
-                  KNOW MORE
-                </Link>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '10px' }}>
+                  <Link
+                    to="/contact"
+                    style={{
+                      backgroundColor: '#009CD7',
+                      color: '#fff',
+                      textDecoration: 'none',
+                      padding: '20px 44px',
+                      borderRadius: '30px',
+                      fontFamily: '"Roboto", Sans-serif',
+                      fontWeight: 500,
+                      fontSize: '18px',
+                      display: 'inline-block',
+                      transition: '0.3s',
+                    }}
+                  >
+                    GET A QUOTE
+                  </Link>
+                  <Link
+                    to="/capabilities"
+                    style={{
+                      backgroundColor: 'transparent',
+                      color: '#fff',
+                      textDecoration: 'none',
+                      padding: '18px 32px',
+                      borderRadius: '30px',
+                      border: '1px solid rgba(255,255,255,0.35)',
+                      fontFamily: '"Roboto", Sans-serif',
+                      fontWeight: 500,
+                      fontSize: '18px',
+                      display: 'inline-block',
+                      transition: '0.3s',
+                    }}
+                  >
+                    VIEW CAPABILITIES
+                  </Link>
+                </div>
               </motion.div>
             </Col>
           </Row>

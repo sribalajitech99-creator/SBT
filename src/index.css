@@ -289,3 +289,97 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
+
+/* Correct CSS variables scope (the existing ::root block is invalid) */
+:root {
+  --sdn-blue: #4169E1;
+  --sdn-black: #000000;
+  --sdn-text-dark: #333333;
+  --sdn-text-light: #666666;
+  --sdn-bg-light: #ffffff;
+  --sdn-bg-alt: #f5f5f5;
+  --sdn-overlay: rgba(0, 0, 0, 0.5);
+
+  /* "Premium" Contact page variables (used by Contact.jsx) */
+  --premium-dark: #0b1220;
+  --premium-accent: #4169E1;
+  --premium-muted: rgba(15, 23, 42, 0.72);
+  --premium-card-bg: rgba(255, 255, 255, 0.92);
+  --premium-border: rgba(15, 23, 42, 0.12);
+}
+
+/* Premium Contact page styles (Contact.jsx) */
+.page-header-premium {
+  position: relative;
+  padding: 72px 0 50px;
+  background: radial-gradient(1200px circle at 10% 10%, rgba(65, 105, 225, 0.35), transparent 35%),
+    linear-gradient(135deg, rgba(11, 18, 32, 1) 0%, rgba(11, 18, 32, 0.96) 60%, rgba(15, 23, 42, 1) 100%);
+  overflow: hidden;
+}
+
+.hero-glow {
+  position: absolute;
+  top: -140px;
+  right: -140px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle at center, rgba(65, 105, 225, 0.55), transparent 60%);
+  filter: blur(12px);
+}
+
+.premium-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+  font-family: 'Nova Square', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.text-gradient-accent {
+  background: linear-gradient(90deg, #22c55e 0%, #3b82f6 50%, #4169e1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.premium-card {
+  background: var(--premium-card-bg);
+  border: 1px solid var(--premium-border);
+  border-radius: 18px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.premium-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(65, 105, 225, 0.08);
+  border: 1px solid rgba(65, 105, 225, 0.18);
+  color: var(--premium-accent);
+}
+
+.btn-premium {
+  background: linear-gradient(135deg, #22c55e 0%, #3b82f6 55%, #4169e1 100%);
+  border: none;
+  color: #fff !important;
+  border-radius: 14px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  box-shadow: 0 16px 40px rgba(65, 105, 225, 0.25);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.btn-premium:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.02);
+}

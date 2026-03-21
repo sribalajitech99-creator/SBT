@@ -22,6 +22,13 @@ const Header = () => {
             <Nav.Link as={NavLink} to="/capabilities" className="nav-link-sdn">CAPABILITIES</Nav.Link>
             <Nav.Link as={NavLink} to="/sister-concern" className="nav-link-sdn">SISTER CONCERN</Nav.Link>
             <Nav.Link as={NavLink} to="/contact" className="nav-link-sdn">CONTACT</Nav.Link>
+            <Link
+              to="/contact"
+              className="btn-primary-sdn"
+              style={{ marginLeft: '10px', whiteSpace: 'nowrap' }}
+            >
+              GET A QUOTE
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
