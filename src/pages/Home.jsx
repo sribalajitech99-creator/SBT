@@ -84,7 +84,18 @@ const Home = () => {
                 <img src="https://sdn.co.in/wp-content/uploads/2025/10/shutterstock_1020591757-1.png" alt="CNC Process" style={{ width: '100%', height: 'auto', objectFit: 'cover', marginBottom: '30px' }} />
                 
                 {/* Stats Box properly placed within the left column */}
-                <div style={{ backgroundColor: '#fff', padding: '30px', boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.5)', marginTop: '300px', position: 'relative', zIndex: 10 }}>
+                <div style={{
+                  backgroundColor: '#fff',
+                  padding: '30px',
+                  boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
+                  marginTop: '300px',
+                  position: 'relative',
+                  zIndex: 10,
+                  borderRadius: '16px',
+                  background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%)',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)'
+                }}>
                   <div className="d-flex flex-wrap text-start w-100">
                     <div style={{ flex: '1 1 50%', paddingRight: '15px', marginBottom: '25px' }}>
                        <div style={{ fontSize: '16px', fontFamily: '"Roboto", Sans-serif', color: '#000', fontWeight: '500', lineHeight: '1.4' }}>

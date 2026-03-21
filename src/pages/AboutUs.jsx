@@ -87,10 +87,28 @@ const AboutUs = () => {
           </div>
           <Row className="align-items-center mb-5 justify-content-center">
             <Col md={3} className="text-center mb-4 mb-md-0">
-                 <img src="https://sdn.co.in/wp-content/uploads/2025/10/certificate.png" alt="Certificate" className="img-fluid shadow-sm" style={{ maxHeight: '250px', border: '1px solid #eee', padding: '10px' }} onError={(e) => e.target.style.display='none'} />
+                 <img src="https://sdn.co.in/wp-content/uploads/2025/10/certificate.png" alt="Certificate" className="img-fluid" style={{
+                   maxHeight: '250px',
+                   border: '1px solid #eee',
+                   padding: '10px',
+                   boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
+                   borderRadius: '12px',
+                   background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%)',
+                   backdropFilter: 'blur(10px)',
+                   border: '1px solid rgba(255, 255, 255, 0.2)'
+                 }} onError={(e) => e.target.style.display='none'} />
             </Col>
             <Col md={3} className="text-center mb-4 mb-md-0">
-                 <img src="https://sdn.co.in/wp-content/uploads/2025/10/award.png" alt="Award" className="img-fluid shadow-sm" style={{ maxHeight: '250px', border: '1px solid #eee', padding: '10px' }} onError={(e) => e.target.style.display='none'} />
+                 <img src="https://sdn.co.in/wp-content/uploads/2025/10/award.png" alt="Award" className="img-fluid" style={{
+                   maxHeight: '250px',
+                   border: '1px solid #eee',
+                   padding: '10px',
+                   boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
+                   borderRadius: '12px',
+                   background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%)',
+                   backdropFilter: 'blur(10px)',
+                   border: '1px solid rgba(255, 255, 255, 0.2)'
+                 }} onError={(e) => e.target.style.display='none'} />
             </Col>
             <Col md={5}>
               <p style={{ fontSize: '14px', lineHeight: '1.8', color: '#333' }}>
@@ -101,25 +119,81 @@ const AboutUs = () => {
 
           <Row className="text-center g-3 mb-5 align-items-stretch mx-auto justify-content-center" style={{ maxWidth: '950px' }}>
             <Col lg={3} md={6}>
-               <div style={{ backgroundColor: '#4169E1', padding: '15px 10px', border: '1px solid #4169E1', borderRadius: '10px', color: '#fff', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', boxShadow: '0 4px 10px rgba(0,0,0,0.15)' }}>
+               <div style={{
+                 backgroundColor: '#4169E1',
+                 padding: '15px 10px',
+                 border: '1px solid #4169E1',
+                 borderRadius: '10px',
+                 color: '#fff',
+                 height: '100%',
+                 display: 'flex',
+                 flexDirection: 'column',
+                 justifyContent: 'center',
+                 boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
+                 background: 'linear-gradient(135deg, #4169E1 0%, #5a7ce8 100%)',
+                 backdropFilter: 'blur(10px)',
+                 border: '1px solid rgba(255, 255, 255, 0.2)'
+               }}>
                   <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>Annual Turnover:</div>
                   <div style={{ fontWeight: 'bold', fontSize: '16px' }}>2.50 &ndash; 3.00Crores</div>
                </div>
             </Col>
             <Col lg={3} md={6}>
-               <div style={{ backgroundColor: '#4169E1', padding: '15px 10px', border: '1px solid #4169E1', borderRadius: '10px', color: '#fff', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', boxShadow: '0 4px 10px rgba(0,0,0,0.15)' }}>
+               <div style={{
+                 backgroundColor: '#4169E1',
+                 padding: '15px 10px',
+                 border: '1px solid #4169E1',
+                 borderRadius: '10px',
+                 color: '#fff',
+                 height: '100%',
+                 display: 'flex',
+                 flexDirection: 'column',
+                 justifyContent: 'center',
+                 boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
+                 background: 'linear-gradient(135deg, #4169E1 0%, #5a7ce8 100%)',
+                 backdropFilter: 'blur(10px)',
+                 border: '1px solid rgba(255, 255, 255, 0.2)'
+               }}>
                   <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>No.of Employees</div>
                   <div style={{ fontWeight: 'bold', fontSize: '16px' }}>25-30 Employees</div>
                </div>
             </Col>
             <Col lg={3} md={6}>
-               <div style={{ backgroundColor: '#4169E1', padding: '15px 10px', border: '1px solid #4169E1', borderRadius: '10px', color: '#fff', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', boxShadow: '0 4px 10px rgba(0,0,0,0.15)' }}>
+               <div style={{
+                 backgroundColor: '#4169E1',
+                 padding: '15px 10px',
+                 border: '1px solid #4169E1',
+                 borderRadius: '10px',
+                 color: '#fff',
+                 height: '100%',
+                 display: 'flex',
+                 flexDirection: 'column',
+                 justifyContent: 'center',
+                 boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
+                 background: 'linear-gradient(135deg, #4169E1 0%, #5a7ce8 100%)',
+                 backdropFilter: 'blur(10px)',
+                 border: '1px solid rgba(255, 255, 255, 0.2)'
+               }}>
                   <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>Annual Turnover with Sister Concern:</div>
                   <div style={{ fontWeight: 'bold', fontSize: '16px' }}>14.0-15.0 Crores</div>
                </div>
             </Col>
             <Col lg={3} md={6}>
-               <div style={{ backgroundColor: '#4169E1', padding: '15px 10px', border: '1px solid #4169E1', borderRadius: '10px', color: '#fff', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', boxShadow: '0 4px 10px rgba(0,0,0,0.15)' }}>
+               <div style={{
+                 backgroundColor: '#4169E1',
+                 padding: '15px 10px',
+                 border: '1px solid #4169E1',
+                 borderRadius: '10px',
+                 color: '#fff',
+                 height: '100%',
+                 display: 'flex',
+                 flexDirection: 'column',
+                 justifyContent: 'center',
+                 boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
+                 background: 'linear-gradient(135deg, #4169E1 0%, #5a7ce8 100%)',
+                 backdropFilter: 'blur(10px)',
+                 border: '1px solid rgba(255, 255, 255, 0.2)'
+               }}>
                   <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>GSTIN</div>
                   <div style={{ fontWeight: 'bold', fontSize: '16px' }}>33AKMPR<br/>8857J1ZC</div>
                </div>
@@ -134,7 +208,16 @@ const AboutUs = () => {
               loop 
               muted 
               playsInline
-              style={{ width: '100%', height: 'auto', display: 'block', boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.2)' }} 
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
+                borderRadius: '12px',
+                background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)'
+              }} 
             />
           </div>
 
@@ -142,7 +225,20 @@ const AboutUs = () => {
           {/* Vision / Mission */}
           <Row className="g-4 mb-5 align-items-stretch">
             <Col md={6}>
-               <div style={{ backgroundColor: '#fff', border: '1px solid #ececec', padding: '130px 60px', height: '100%', boxShadow: '0 4px 12px rgba(0,0,0,0.05)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+               <div style={{
+                 backgroundColor: '#fff',
+                 border: '1px solid #ececec',
+                 padding: '130px 60px',
+                 height: '100%',
+                 boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
+                 display: 'flex',
+                 flexDirection: 'column',
+                 justifyContent: 'center',
+                 borderRadius: '16px',
+                 background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%)',
+                 backdropFilter: 'blur(10px)',
+                 border: '1px solid rgba(255, 255, 255, 0.2)'
+               }}>
                   <h2 style={{ color: '#4169E1', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', fontSize: '40px' }}>OUR VISION</h2>
                   <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#333', textAlign: 'left', margin: 0 }}>
                      Our vision is to become a recognized industry leader by our customers in component / P roto part manufacturing and commitment to excellence in the markets we serve and ensure business growth in a manner that serves the interest of all our stakeholders.
@@ -150,7 +246,20 @@ const AboutUs = () => {
                </div>
             </Col>
             <Col md={6}>
-               <div style={{ backgroundColor: '#fff', border: '1px solid #ececec', padding: '130px 60px', height: '100%', boxShadow: '0 4px 12px rgba(0,0,0,0.05)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+               <div style={{
+                 backgroundColor: '#fff',
+                 border: '1px solid #ececec',
+                 padding: '130px 60px',
+                 height: '100%',
+                 boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08), 0 5px 10px rgba(0, 0, 0, 0.06)',
+                 display: 'flex',
+                 flexDirection: 'column',
+                 justifyContent: 'center',
+                 borderRadius: '16px',
+                 background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%)',
+                 backdropFilter: 'blur(10px)',
+                 border: '1px solid rgba(255, 255, 255, 0.2)'
+               }}>
                   <h2 style={{ color: '#4169E1', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', fontSize: '40px' }}>OUR MISSION</h2>
                   <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#333', textAlign: 'left', margin: 0 }}>
                      Our mission is to create consistant value for our customers by delivering highest quality of products with providing complete solutions like full finished parts
