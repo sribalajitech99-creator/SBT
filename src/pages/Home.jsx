@@ -78,7 +78,7 @@ const Home = () => {
                   Manufacturer of Precision Machined Components for Automobile and General Engineering Industries
                 </h5>
                 <p style={{ fontFamily: '"Roboto", Sans-serif', color: '#000', fontWeight: 300, fontSize: '19px', lineHeight: '1.6', marginBottom: '30px' }}>
-                  With state-of-the-art CNC and VMC technology, SDN Engineering provides world-class quality and consistency across every part we produce.
+                  With state-of-the-art CNC and VMC technology, Sri Balaji Tech provides world-class quality and consistency across every part we produce.
                 </p>
                 
                 <img src="https://sdn.co.in/wp-content/uploads/2025/10/shutterstock_1020591757-1.png" alt="CNC Process" style={{ width: '100%', height: 'auto', objectFit: 'cover', marginBottom: '30px' }} />
