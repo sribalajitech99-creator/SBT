@@ -6,15 +6,20 @@ const Capabilities = () => {
    return (
       <div>
          {/* Hero Image Section */}
-         <section className="p-0 m-0">
+         <section style={{ position: 'relative', width: '100%', height: '500px', overflow: 'hidden' }}>
             <video
                src={newVideo}
                autoPlay
                loop
                muted
                playsInline
-               style={{ width: '100%', maxHeight: '500px', objectFit: 'cover', display: 'block' }}
+               style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             />
+            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0, 0, 0, 0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                  <h1 style={{ color: '#fff', fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', fontWeight: 800, margin: 0, textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>Capabilities</h1>
+               </motion.div>
+            </div>
          </section>
 
          {/* Services Section */}
