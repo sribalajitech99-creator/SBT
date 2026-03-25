@@ -12,24 +12,23 @@ const Footer = () => {
             <Col lg={3} md={6}>
               <div style={{ textTransform: 'uppercase', fontWeight: 700, fontSize: '18px', marginBottom: '20px' }}>ADMIN:</div>
               <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
-                72993 32000, 73054 84528<br />
-                accounts@sbt.co.in<br />
-                sbtramesh@sbt.co.in
+                8675243628<br />  
+                Bharathidasank@sribalajitech.net
               </div>
             </Col>
             <Col lg={3} md={6}>
               <div style={{ textTransform: 'uppercase', fontWeight: 700, fontSize: '18px', marginBottom: '20px' }}>MARKETING:</div>
               <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
-                89257 46458, 7305484528<br />
-                marketing@sbt.co.in
+                8675243628<br />
+                Sales@sribalajitech.net
               </div>
             </Col>
             <Col lg={3} md={6}>
               <div style={{ textTransform: 'uppercase', fontWeight: 700, fontSize: '18px', marginBottom: '20px' }}>OFFICE:</div>
               <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
-                +91 044-4768 4420, 89257 46458<br />
-                sales@sbt.co.in<br />
-                purchase@sbt.co.in
+                8675243628<br />
+                Quality@sribalajitech.net<br />
+                Purchase@sribalajitech.net
               </div>
             </Col>
             <Col lg={3} md={6} className="text-lg-end text-start mt-4 mt-lg-5">

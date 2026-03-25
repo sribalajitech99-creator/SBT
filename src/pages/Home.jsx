@@ -18,7 +18,7 @@ const Home = () => {
                   HIGH PRECISION <br /> ONTIME DELIVERY
                 </h1>
                 <div style={{ fontFamily: '"Open Sans", Sans-serif', fontSize: '28px', fontWeight: 600, lineHeight: '60px', color: '#fff', marginBottom: '35px' }}>
-                  AUTOMATED PRODUCTION TECHNOLOGY WITH ROBOTIC
+                  AUTOMATED PRODUCTION TECHNOLOGY
                 </div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '10px' }}>
                   <Link
@@ -72,7 +72,7 @@ const Home = () => {
               <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
                 <div style={{ fontFamily: '"Roboto", Sans-serif', color: '#000', fontWeight: '600', fontSize: '40px', marginBottom: '5px' }}>WE ARE</div>
                 <h2 style={{ fontFamily: '"Roboto", Sans-serif', color: '#009CD7', fontWeight: '600', fontSize: '64px', marginBottom: '20px', lineHeight: 1 }}>
-                  SRI Balaji Tech
+                  Sri Balaji Tech
                 </h2>
                 <h5 style={{ fontFamily: '"Roboto", Sans-serif', color: '#000', fontWeight: '600', fontSize: '19px', lineHeight: '1.5', marginBottom: '20px' }}>
                   Manufacturer of Precision Machined Components for Automobile and General Engineering Industries
