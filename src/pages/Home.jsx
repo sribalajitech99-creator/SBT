@@ -2,6 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import heroimg from '../assets/hero.png';
+import newvideo from '../assets/1.mp4'
 const Home = () => {
   return (
     <div>
@@ -154,7 +155,7 @@ const Home = () => {
             <Col lg={7}>
               <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }} style={{ height: '100%', paddingLeft: '30px' }}>
                 <video autoPlay loop muted playsInline style={{ width: '100%', height: '100%', minHeight: '600px', objectFit: 'cover' }}>
-                     <source src="https://sdn.co.in/wp-content/uploads/2025/10/WhatsApp-Video-2025-10-04-at-07.08.57_09f29bae.mp4" type="video/mp4" />
+                     <source src= {newvideo} type="video/mp4" />
                 </video>
               </motion.div>
             </Col>

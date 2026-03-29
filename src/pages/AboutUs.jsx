@@ -1,12 +1,13 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import heroVideo from '../assets/vecteezy_the-5-axis-cnc-milling-machine-cutting-the-metal-mold-part_70918760.mp4';
-import newVideo from '../assets/852341-hd_1920_1080_30fps.mp4';
+import img1 from '../assets/200.webp'
 import ashokLogo from '../assets/Ashok-Leyland-Logo.png';
 import sundramLogo from '../assets/BMQRep_Logos_Interior_Sundram.png';
 import secheronLogo from '../assets/secheron.png';
 import fastenexlogo from '../assets/4494.jpg';
 import preFooterImg from '../assets/pre-footer images.jpg';
+import newVideo from '../assets/1.mp4';
 
 const AboutUs = () => {
   return (
@@ -49,7 +50,7 @@ const AboutUs = () => {
             <Col lg={6} className="text-center">
               <motion.img 
                 initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
-                src="https://5.imimg.com/data5/SELLER/Default/2022/1/DF/BA/OO/120893411/cnc-turning-machine-flat-bed-1000x1000.jpeg" 
+                src={img1} 
                 alt="Lokesh VML 1000" 
                 className="img-fluid" 
                 style={{ maxHeight: '400px' }} 
@@ -164,7 +165,7 @@ const AboutUs = () => {
                    animation: 'shimmer 2s ease-in-out infinite'
                  }}></div>
                   <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>Annual Turnover:</div>
-                  <div style={{ fontWeight: 'bold', fontSize: '16px' }}>2.50 &ndash; 3.00Crores</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '16px' }}>6.00 &ndash; 6.50 Crores</div>
                </motion.div>
             </Col>
             <Col lg={3} md={6}>
@@ -184,7 +185,7 @@ const AboutUs = () => {
                  border: '1px solid rgba(255, 255, 255, 0.2)'
                }}>
                   <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>No.of Employees</div>
-                  <div style={{ fontWeight: 'bold', fontSize: '16px' }}>25-30 Employees</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '16px' }}>65-70 Employees</div>
                </div>
             </Col>
             <Col lg={3} md={6}>
@@ -204,7 +205,7 @@ const AboutUs = () => {
                  border: '1px solid rgba(255, 255, 255, 0.2)'
                }}>
                   <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>Annual Turnover with Sister Concern:</div>
-                  <div style={{ fontWeight: 'bold', fontSize: '16px' }}>14.0-15.0 Crores</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '16px' }}>4.00 Crores</div>
                </div>
             </Col>
             <Col lg={3} md={6}>
@@ -224,7 +225,7 @@ const AboutUs = () => {
                  border: '1px solid rgba(255, 255, 255, 0.2)'
                }}>
                   <div className="mb-2" style={{ color: '#000', fontWeight: 'bold', fontSize: '15px' }}>GSTIN</div>
-                  <div style={{ fontWeight: 'bold', fontSize: '16px' }}>33AKMPR<br/>8857J1ZC</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '16px' }}>33DKRP<br/>S3570K1ZH</div>
                </div>
             </Col>
           </Row>

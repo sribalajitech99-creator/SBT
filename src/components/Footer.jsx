@@ -19,14 +19,14 @@ const Footer = () => {
             <Col lg={3} md={6}>
               <div style={{ textTransform: 'uppercase', fontWeight: 700, fontSize: '18px', marginBottom: '20px' }}>MARKETING:</div>
               <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
-                8675243628<br />
+                7550022329<br />
                 Sales@sribalajitech.net
               </div>
             </Col>
             <Col lg={3} md={6}>
               <div style={{ textTransform: 'uppercase', fontWeight: 700, fontSize: '18px', marginBottom: '20px' }}>OFFICE:</div>
               <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
-                8675243628<br />
+                7299331000<br />
                 Quality@sribalajitech.net<br />
                 Purchase@sribalajitech.net
               </div>

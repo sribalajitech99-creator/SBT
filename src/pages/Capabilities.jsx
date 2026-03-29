@@ -1,6 +1,8 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import newVideo from '../assets/852341-hd_1920_1080_30fps.mp4';
+import threadmachine from '../assets/Thread rolling.png';
+import Bandsaw from '../assets/Bandsaw.png';
 
 const Capabilities = () => {
    return (
@@ -271,179 +273,19 @@ const Capabilities = () => {
                            <tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr>
                         </thead>
                         <tbody>
-                           <tr><td>CNC Turning<br />Centre</td><td>Jobber Elite</td><td>270x200<br />mm</td><td>3</td></tr>
-                           <tr><td>CNC Turning<br />Centre</td><td>Lokesh-TL20N</td><td>275x325<br />mm</td><td>3</td></tr>
-                           <tr><td>CNC Turning<br />Centre</td><td>Lokesh-TL200</td><td>270x200<br />mm</td><td>1</td></tr>
-                           <tr><td>CNC Turning<br />Centre</td><td>Macpower</td><td>270x350<br />mm</td><td>1</td></tr>
+                           <tr><td>CNC Turning<br />Centre</td><td>Lokesh-TL160</td><td>270x200<br />mm</td><td>5</td></tr>
+                           <tr><td>CNC Turning<br />Centre</td><td>GlobalVagor-130</td><td>275x325<br />mm</td><td>3</td></tr>
+                           <tr><td>CNC Turning<br />Centre</td><td>Lokesh-TL200</td><td>270x200<br />mm</td><td>10</td></tr>
+                           <tr><td>CNC Turning<br />Centre</td><td>LMW-LL20TL7</td><td>270x700<br />mm</td><td>1</td></tr>
+                             <tr><td>CNC Turning<br />Centre</td><td>Jyoti</td><td>270x1200<br />mm</td><td>1</td></tr>
                         </tbody>
                      </table>
                      </motion.div>
                   </Col>
                </Row>
 
-               {/* Row 2 */}
-               <Row className="align-items-center justify-content-center mb-5 pb-4 border-bottom">
-                  <Col lg={5} className="text-center mb-4 mb-lg-0">
-                     <motion.div
-                       style={{
-                         position: 'relative',
-                         overflow: 'hidden',
-                         borderRadius: '20px'
-                       }}
-                       initial={{ opacity: 0, x: -30 }}
-                       whileInView={{ opacity: 1, x: 0 }}
-                       viewport={{ once: true }}
-                       transition={{ duration: 0.8, delay: 0.3 }}
-                       whileHover={{
-                         scale: 1.02,
-                         transition: { duration: 0.3 }
-                       }}
-                     >
-                       <img src="https://sdn.co.in/wp-content/uploads/2025/10/Screenshot-2025-10-05-113706.png" alt="Vertical Machine Centre" className="img-fluid" style={{
-                         maxHeight: '350px',
-                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
-                         borderRadius: '20px',
-                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
-                         backdropFilter: 'blur(20px)',
-                         border: '1px solid rgba(255, 255, 255, 0.3)',
-                         transition: 'all 0.3s ease'
-                       }} onError={(e) => { e.target.onError = null; e.target.src = "/gallery/9.jpeg" }} />
-                       <div style={{
-                         position: 'absolute',
-                         top: 0,
-                         left: 0,
-                         right: 0,
-                         height: '4px',
-                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
-                         backgroundSize: '200% 100%',
-                         animation: 'shimmer 3s ease-in-out infinite'
-                       }}></div>
-                     </motion.div>
-                  </Col>
-                  <Col lg={6}>
-                     <motion.div
-                       style={{
-                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
-                         borderRadius: '20px',
-                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
-                         backdropFilter: 'blur(20px)',
-                         border: '1px solid rgba(255, 255, 255, 0.3)',
-                         overflow: 'hidden',
-                         position: 'relative'
-                       }}
-                       initial={{ opacity: 0, x: 30 }}
-                       whileInView={{ opacity: 1, x: 0 }}
-                       viewport={{ once: true }}
-                       transition={{ duration: 0.8, delay: 0.4 }}
-                       whileHover={{
-                         scale: 1.01,
-                         boxShadow: '0 35px 70px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
-                         transition: { duration: 0.3 }
-                       }}
-                     >
-                       <div style={{
-                         position: 'absolute',
-                         top: 0,
-                         left: 0,
-                         right: 0,
-                         height: '4px',
-                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
-                         backgroundSize: '200% 100%',
-                         animation: 'shimmer 3s ease-in-out infinite'
-                       }}></div>
-                       <table className="table machine-table w-100 mb-0">
-                        <thead>
-                           <tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr>
-                        </thead>
-                        <tbody>
-                           <tr><td>Vertical<br />Machine<br />Centre</td><td>Lokesh-VM-09<br />With 4th Axis</td><td>800x500x<br />500 mm</td><td>2</td></tr>
-                        </tbody>
-                     </table>
-                     </motion.div>
-                  </Col>
-               </Row>
-
-               {/* Row 3 */}
-               <Row className="align-items-center justify-content-center mb-5 pb-4 border-bottom">
-                  <Col lg={5} className="text-center mb-4 mb-lg-0">
-                     <motion.div
-                       style={{
-                         position: 'relative',
-                         overflow: 'hidden',
-                         borderRadius: '20px'
-                       }}
-                       initial={{ opacity: 0, x: -30 }}
-                       whileInView={{ opacity: 1, x: 0 }}
-                       viewport={{ once: true }}
-                       transition={{ duration: 0.8, delay: 0.5 }}
-                       whileHover={{
-                         scale: 1.02,
-                         transition: { duration: 0.3 }
-                       }}
-                     >
-                       <img src="https://sdn.co.in/wp-content/uploads/2025/10/fanuc.png" alt="Robot Cell" className="img-fluid" style={{
-                         maxHeight: '350px',
-                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
-                         borderRadius: '20px',
-                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
-                         backdropFilter: 'blur(20px)',
-                         border: '1px solid rgba(255, 255, 255, 0.3)',
-                         transition: 'all 0.3s ease'
-                       }} onError={(e) => { e.target.onError = null; e.target.src = "/gallery/9.jpeg" }} />
-                       <div style={{
-                         position: 'absolute',
-                         top: 0,
-                         left: 0,
-                         right: 0,
-                         height: '4px',
-                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
-                         backgroundSize: '200% 100%',
-                         animation: 'shimmer 3s ease-in-out infinite'
-                       }}></div>
-                     </motion.div>
-                  </Col>
-                  <Col lg={6}>
-                     <motion.div
-                       style={{
-                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
-                         borderRadius: '20px',
-                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
-                         backdropFilter: 'blur(20px)',
-                         border: '1px solid rgba(255, 255, 255, 0.3)',
-                         overflow: 'hidden',
-                         position: 'relative'
-                       }}
-                       initial={{ opacity: 0, x: 30 }}
-                       whileInView={{ opacity: 1, x: 0 }}
-                       viewport={{ once: true }}
-                       transition={{ duration: 0.8, delay: 0.6 }}
-                       whileHover={{
-                         scale: 1.01,
-                         boxShadow: '0 35px 70px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
-                         transition: { duration: 0.3 }
-                       }}
-                     >
-                       <div style={{
-                         position: 'absolute',
-                         top: 0,
-                         left: 0,
-                         right: 0,
-                         height: '4px',
-                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
-                         backgroundSize: '200% 100%',
-                         animation: 'shimmer 3s ease-in-out infinite'
-                       }}></div>
-                       <table className="table machine-table w-100 mb-0">
-                        <thead>
-                           <tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr>
-                        </thead>
-                        <tbody>
-                           <tr><td>Automation<br />Robot Cell</td><td>Fanuc</td><td>25 Kg</td><td>2</td></tr>
-                        </tbody>
-                     </table>
-                     </motion.div>
-                  </Col>
-               </Row>
+               
+               
 
                {/* Row 4 - Two tables */}
                <Row className="justify-content-center mt-5">
@@ -479,7 +321,7 @@ const Capabilities = () => {
                          animation: 'shimmer 3s ease-in-out infinite'
                        }}></div>
                      <div className="text-center mb-4">
-                        <img src="" alt="Thread Rolling" className="img-fluid" style={{ maxHeight: '250px' }} onError={(e) => e.target.style.display = 'none'} />
+                        <img src= {threadmachine} alt="Thread Rolling" className="img-fluid" style={{ maxHeight: '250px' }} onError={(e) => e.target.style.display = 'none'} />
                      </div>
                      <table className="table machine-table w-100 mb-0">
                         <thead>
@@ -524,7 +366,7 @@ const Capabilities = () => {
                          animation: 'shimmer 3s ease-in-out infinite'
                        }}></div>
                      <div className="text-center mb-4">
-                        <img src="" alt="Bandsaw" className="img-fluid" style={{ maxHeight: '250px' }} onError={(e) => e.target.style.display = 'none'} />
+                        <img src={Bandsaw} alt="Bandsaw" className="img-fluid" style={{ maxHeight: '250px' }} onError={(e) => e.target.style.display = 'none'} />
                      </div>
                      <table className="table machine-table w-100 mb-0">
                         <thead>

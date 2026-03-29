@@ -194,7 +194,8 @@ const Contact = () => {
                   </motion.div>
                   <div>
                     <h5 className="mb-1 fw-bold" style={{ color: 'var(--premium-dark)' }}>Address</h5>
-                    <p className="text-muted mb-0 fs-5">SIDCO Industrial Estate, North Phase<br />Pattaravakkam, Ambattur, Chennai, India</p>
+                    <p className="text-muted mb-0 fs-5">364, 4th St, Sidco Industrial Estate, <br /> Ambattur, Chennai, Tamil Nadu 600053
+</p>
                   </div>
                 </div>
               </motion.div>
