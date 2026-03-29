@@ -352,7 +352,6 @@ const AboutUs = () => {
             <Row className="justify-content-center align-items-center g-4">
                {/* Local uploaded logos */}
                <Col xs={6} md={3}><img src={ashokLogo} alt="Ashok Leyland" className="img-fluid" style={{ maxHeight: '60px' }} /></Col>
-               <Col xs={6} md={3}><img src={fastenexlogo} alt="Fastenex" className="img-fluid" style={{ maxHeight: '60px' }} /></Col>
                <Col xs={6} md={3}><img src={sundramLogo} alt="Sundram Fasteners" className="img-fluid" style={{ maxHeight: '60px' }} /></Col>
                <Col xs={6} md={3}><img src={secheronLogo} alt="Secheron" className="img-fluid" style={{ maxHeight: '60px' }} /></Col>
             </Row>
