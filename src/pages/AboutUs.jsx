@@ -2,9 +2,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import heroVideo from '../assets/vecteezy_the-5-axis-cnc-milling-machine-cutting-the-metal-mold-part_70918760.mp4';
 import img1 from '../assets/200.webp'
-import ashokLogo from '../assets/Ashok-Leyland-Logo.png';
+import ashokLogo from '../assets/Gala.jpg';
 import sundramLogo from '../assets/BMQRep_Logos_Interior_Sundram.png';
-import secheronLogo from '../assets/secheron.png';
+import secheronLogo from '../assets/SEF.jpg';
 import fastenexlogo from '../assets/4494.jpg';
 import preFooterImg from '../assets/pre-footer images.jpg';
 import newVideo from '../assets/1.mp4';
