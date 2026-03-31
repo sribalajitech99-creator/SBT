@@ -165,7 +165,7 @@ const Contact = () => {
                   </motion.div>
                   <div>
                     <h5 className="mb-1 fw-bold" style={{ color: 'var(--premium-dark)' }}>Email</h5>
-                    <p className="text-muted mb-0 fs-5">sribalajitech99@gmail.com</p>
+                    <p className="text-muted mb-0 fs-5">Sales@sribalajitech.com</p>
                   </div>
                 </div>
 
