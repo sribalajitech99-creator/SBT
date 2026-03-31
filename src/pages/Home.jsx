@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { FiAward, FiTarget, FiClock, FiUsers } from 'react-icons/fi';
 import heroimg from '../assets/hero.png';
 import newvideo from '../assets/1.mp4'
 const Home = () => {
@@ -201,14 +202,14 @@ const Home = () => {
             
           <Row className="g-4 mt-4">
             {[
-              { title: "Quality First", icon: "https://sdn.co.in/wp-content/uploads/2025/10/Asset-1sapi-150x150-1.png", desc: "Committed to delivering zero-defect products through continuous monitoring and IATF/ISO standards." },
-              { title: "Precision", icon: "https://sdn.co.in/wp-content/uploads/2025/10/Asset-4sapi-150x150-1.png", desc: "Equipped with advanced CNC centers and thread rolling machines for close tolerance manufacturing." },
-              { title: "Timely Delivery", icon: "https://sdn.co.in/wp-content/uploads/2025/10/Asset-2sapi-150x150-1.png", desc: "Optimized planning and full power backup ensure we always meet your production schedules." },
-              { title: "Customer Focus", icon: "https://sdn.co.in/wp-content/uploads/2025/10/Asset-3sapi-150x150-1.png", desc: "We build long-term partnerships through customized solutions and dedicated engineering support." }
+              { title: "Quality First", icon: <FiAward size={40} color="#4169E1" />, desc: "Committed to delivering zero-defect products through continuous monitoring and IATF/ISO standards." },
+              { title: "Precision", icon: <FiTarget size={40} color="#4169E1" />, desc: "Equipped with advanced CNC centers and thread rolling machines for close tolerance manufacturing." },
+              { title: "Timely Delivery", icon: <FiClock size={40} color="#4169E1" />, desc: "Optimized planning and full power backup ensure we always meet your production schedules." },
+              { title: "Customer Focus", icon: <FiUsers size={40} color="#4169E1" />, desc: "We build long-term partnerships through customized solutions and dedicated engineering support." }
             ].map((item, idx) => (
               <Col lg={3} md={6} key={idx}>
                 <motion.div whileHover={{ y: -10 }} style={{ padding: '30px', background: '#fff', borderRadius: '15px', height: '100%', border: '1px solid #efefef', textAlign: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
-                  <img src={item.icon} style={{ width: '80px', marginBottom: '20px' }} alt={item.title} />
+                  <div style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>{item.icon}</div>
                   <h4 style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#333' }}>{item.title}</h4>
                   <p style={{ fontSize: '14px', color: '#666', lineHeight: '1.8' }}>{item.desc}</p>
                 </motion.div>

@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { FiCalendar, FiMaximize, FiActivity, FiZap, FiUsers } from 'react-icons/fi';
 import heroVideo from '../assets/vecteezy_the-5-axis-cnc-milling-machine-cutting-the-metal-mold-part_70918760.mp4';
 import img1 from '../assets/200.webp'
 import galaLogo from '../assets/Gala.jpg';
@@ -64,11 +65,11 @@ const AboutUs = () => {
           {/* Quick Stats Grid */}
           <Row className="text-center g-3 mb-5 align-items-stretch mx-auto justify-content-center" style={{ maxWidth: '950px' }}>
             {[
-              { label: "Established", value: "1998 (26+ Years)" },
-              { label: "Facility Area", value: "16,000 Sq. Ft." },
-              { label: "Capacity", value: "85% - 90% Utilization" },
-              { label: "Power Backup", value: "300 Kva Full Backup" },
-              { label: "Team Strength", value: "75+ Professionals" }
+              { label: "Established", value: "1998 (26+ Years)", icon: <FiCalendar size={20} /> },
+              { label: "Facility Area", value: "16,000 Sq. Ft.", icon: <FiMaximize size={20} /> },
+              { label: "Capacity", value: "85% - 90% Utilization", icon: <FiActivity size={20} /> },
+              { label: "Power Backup", value: "300 Kva Full Backup", icon: <FiZap size={20} /> },
+              { label: "Team Strength", value: "75+ Professionals", icon: <FiUsers size={20} /> }
             ].map((stat, idx) => (
               <Col lg={2} md={4} xs={6} key={idx}>
                 <div style={{
@@ -79,11 +80,13 @@ const AboutUs = () => {
                   height: '100%',
                   display: 'flex',
                   flexDirection: 'column',
+                  alignItems: 'center',
                   justifyContent: 'center',
                   background: 'linear-gradient(135deg, #4169E1 0%, #009CD7 100%)',
                   boxShadow: '0 10px 20px rgba(0,0,0,0.1)',
                   border: '1px solid rgba(255,255,255,0.2)'
                 }}>
+                  <div style={{ marginBottom: '8px', opacity: 0.9 }}>{stat.icon}</div>
                   <div style={{ color: '#fff', opacity: 0.9, fontSize: '13px', marginBottom: '5px' }}>{stat.label}</div>
                   <div style={{ fontWeight: 'bold', fontSize: '15px' }}>{stat.value}</div>
                 </div>

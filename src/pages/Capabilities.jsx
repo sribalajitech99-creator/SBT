@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { FiThermometer, FiLayers, FiCheckCircle } from 'react-icons/fi';
 import newVideo from '../assets/852341-hd_1920_1080_30fps.mp4';
 import threadmachine from '../assets/Thread rolling.png';
 import Bandsaw from '../assets/Bandsaw.png';
@@ -151,18 +152,21 @@ const Capabilities = () => {
 
                <Row className="g-5 text-center mb-5">
                   <Col lg={4}>
+                     <div style={{ marginBottom: '15px', color: '#4169E1' }}><FiThermometer size={35} /></div>
                      <h4 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>HEAT TREATMENT</h4>
                      <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#444', textAlign: 'justify' }}>
                         Heat treatment is carried out through approved, customer-certified vendors to ensure the required mechanical properties and dimensional stability. Processes such as hardening, tempering, case hardening, induction hardening, and nitriding are performed under strict quality supervision. Components are periodically validated through NABL-approved laboratories to ensure compliance with customer and industry standards.
                      </p>
                   </Col>
                   <Col lg={4}>
+                     <div style={{ marginBottom: '15px', color: '#4169E1' }}><FiLayers size={35} /></div>
                      <h4 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>SURFACE TREATMENT</h4>
                      <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#444', textAlign: 'justify' }}>
                         All surface treatment and coating operations are handled by qualified and approved vendors. Processes include zinc, zinc-nickel, trivalent zinc, and electroless nickel plating, depending on the component application. Coating thickness, adhesion, and corrosion resistance are verified through periodic salt spray and XRF tests at certified laboratories, ensuring the highest surface quality and performance.
                      </p>
                   </Col>
                   <Col lg={4}>
+                     <div style={{ marginBottom: '15px', color: '#4169E1' }}><FiCheckCircle size={35} /></div>
                      <h4 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>QUALITY CONTROL & INSPECTION</h4>
                      <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#444', textAlign: 'justify' }}>
                         Quality is the foundation of everything we do at SBT Engineering. Each new product undergoes Advanced Product Quality Planning (APQP) to ensure complete understanding of customer requirements. We apply global quality methodologies such as FMEA, MSA, SPC, and PPAP to develop robust processes. All critical dimensions are verified using precision instruments and gauges to further enhance accuracy and validation capabilities.
