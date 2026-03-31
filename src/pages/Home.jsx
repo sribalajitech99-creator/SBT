@@ -157,58 +157,63 @@ const Home = () => {
                 <video autoPlay loop muted playsInline style={{ width: '100%', height: '100%', minHeight: '600px', objectFit: 'cover' }}>
                      <source src= {newvideo} type="video/mp4" />
                 </video>
+                {/* Intro & New Statistics Section */}
+                <div style={{
+                  padding: '30px',
+                  boxShadow: '0 15px 35px rgba(0,0,0,0.1)',
+                  borderRadius: '20px',
+                  background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
+                  border: '1px solid #eee',
+                  marginTop: '40px'
+                }}>
+                  <Row className="g-4 text-center">
+                    <Col sm={6} lg={3}>
+                      <div style={{ fontWeight: 'bold', fontSize: '24px', color: '#4169E1' }}>16,000 sq. ft.</div>
+                      <div style={{ fontSize: '14px', color: '#666' }}>Modern Production Facility</div>
+                    </Col>
+                    <Col sm={6} lg={3}>
+                      <div style={{ fontWeight: 'bold', fontSize: '24px', color: '#4169E1' }}>18 Unit</div>
+                      <div style={{ fontSize: '14px', color: '#666' }}>CNC Machining Centers</div>
+                    </Col>
+                    <Col sm={6} lg={3}>
+                      <div style={{ fontWeight: 'bold', fontSize: '24px', color: '#4169E1' }}>300 Kva</div>
+                      <div style={{ fontSize: '14px', color: '#666' }}>Power backup (Gen Set)</div>
+                    </Col>
+                    <Col sm={6} lg={3}>
+                      <div style={{ fontWeight: 'bold', fontSize: '24px', color: '#4169E1' }}>ISO 9001:2015</div>
+                      <div style={{ fontSize: '14px', color: '#666' }}>Certified Standards</div>
+                    </Col>
+                  </Row>
+                </div>
               </motion.div>
             </Col>
           </Row>
         </Container>
       </section>
 
-      {/* Why SDN Section */}
-      <section className="py-5 position-relative" style={{ backgroundImage: "url('https://sdn.co.in/wp-content/uploads/2025/10/shutterstock_1492926674-1-2.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed', minHeight: '1010px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: '#0276A9', mixBlendMode: 'multiply', zIndex: 0 }}></div>
-        
-        <Container className="position-relative" style={{ zIndex: 1 }}>
+      {/* Why SBT Section */}
+      <section className="py-5 bg-light">
+        <Container>
           <div className="text-center mb-5 mt-5">
-            <h2 style={{ color: '#fff', fontSize: '64px', fontFamily: '"Roboto", Sans-serif', fontWeight: 600, letterSpacing: '1px' }}>WHY SBT</h2>
+            <h2 style={{ color: '#4169E1', fontSize: '48px', fontWeight: 600 }}>WHY SRI BALAJI TECH?</h2>
+            <div style={{ width: '80px', height: '4px', background: '#4169E1', margin: '20px auto' }}></div>
           </div>
             
           <Row className="g-4 mt-4">
-            <Col lg={3} md={6}>
-              <div className="text-center">
-                <img src="https://sdn.co.in/wp-content/uploads/2025/10/Asset-1sapi-150x150-1.png" style={{ width: '99px', marginBottom: '15px' }} alt="Quality Icon" />
-                <h3 style={{ color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '15px' }}>Quality</h3>
-                <p style={{ color: '#fff', fontSize: '16px', fontFamily: '"AR One Sans", Sans-serif', lineHeight: '1.8rem', fontWeight: 400 }}>
-                  We are an ISO 9001:2015 certified organization, committed to delivering precision-machined components that meet stringent customer specifications. Our robust Quality Management System ensures consistency, traceability, and "zero-defect" products through continuous monitoring and process improvement.
-                </p>
-              </div>
-            </Col>
-            <Col lg={3} md={6}>
-              <div className="text-center">
-                <img src="https://sdn.co.in/wp-content/uploads/2025/10/Asset-2sapi-150x150-1.png" style={{ width: '99px', marginBottom: '15px' }} alt="Timely Delivery Icon" />
-                <h3 style={{ color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '15px' }}>Timely Delivery</h3>
-                <p style={{ color: '#fff', fontSize: '16px', fontFamily: '"AR One Sans", Sans-serif', lineHeight: '1.8rem', fontWeight: 400 }}>
-                  With optimized production planning and a customer-specific scheduling system, SBT ensures on-time delivery of every batch. Our efficient supply chain and strong vendor network enable us to meet tight timelines without compromising quality.
-                </p>
-              </div>
-            </Col>
-            <Col lg={3} md={6}>
-               <div className="text-center">
-                <img src="https://sdn.co.in/wp-content/uploads/2025/10/Asset-4sapi-150x150-1.png" style={{ width: '99px', marginBottom: '15px' }} alt="Precision Icon" />
-                <h3 style={{ color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '15px' }}>Precision Manufacturing</h3>
-                <p style={{ color: '#fff', fontSize: '16px', fontFamily: '"AR One Sans", Sans-serif', lineHeight: '1.8rem', fontWeight: 400 }}>
-                  At Sri Balaji Tech, precision is our foundation. Equipped with advanced CNC turning centers, VMCs, thread rolling machines, and robotic automation, we manufacture critical components with close tolerances and superior finish — ensuring performance, accuracy, and reliability in every part.
-                </p>
-              </div>
-            </Col>
-            <Col lg={3} md={6}>
-               <div className="text-center">
-                 <img src="https://sdn.co.in/wp-content/uploads/2025/10/Asset-3sapi-150x150-1.png" style={{ width: '99px', marginBottom: '15px' }} alt="Customer Focus Icon" />
-                 <h3 style={{ color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '15px' }}>Customer Focus</h3>
-                 <p style={{ color: '#fff', fontSize: '16px', fontFamily: '"AR One Sans", Sans-serif', lineHeight: '1.8rem', fontWeight: 400 }}>
-                   We are a customer-driven company that believes in building long-term partnerships. By working closely with our clients from concept to production, we develop the best solutions to meet their functional, quality, and delivery requirements — every time.
-                 </p>
-              </div>
-            </Col>
+            {[
+              { title: "Quality First", icon: "https://sdn.co.in/wp-content/uploads/2025/10/Asset-1sapi-150x150-1.png", desc: "Committed to delivering zero-defect products through continuous monitoring and IATF/ISO standards." },
+              { title: "Precision", icon: "https://sdn.co.in/wp-content/uploads/2025/10/Asset-4sapi-150x150-1.png", desc: "Equipped with advanced CNC centers and thread rolling machines for close tolerance manufacturing." },
+              { title: "Timely Delivery", icon: "https://sdn.co.in/wp-content/uploads/2025/10/Asset-2sapi-150x150-1.png", desc: "Optimized planning and full power backup ensure we always meet your production schedules." },
+              { title: "Customer Focus", icon: "https://sdn.co.in/wp-content/uploads/2025/10/Asset-3sapi-150x150-1.png", desc: "We build long-term partnerships through customized solutions and dedicated engineering support." }
+            ].map((item, idx) => (
+              <Col lg={3} md={6} key={idx}>
+                <motion.div whileHover={{ y: -10 }} style={{ padding: '30px', background: '#fff', borderRadius: '15px', height: '100%', border: '1px solid #efefef', textAlign: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
+                  <img src={item.icon} style={{ width: '80px', marginBottom: '20px' }} alt={item.title} />
+                  <h4 style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#333' }}>{item.title}</h4>
+                  <p style={{ fontSize: '14px', color: '#666', lineHeight: '1.8' }}>{item.desc}</p>
+                </motion.div>
+              </Col>
+            ))}
           </Row>
         </Container>
       </section>

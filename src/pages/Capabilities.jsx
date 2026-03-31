@@ -47,13 +47,11 @@ const Capabilities = () => {
                      >
                        <img src="https://sdn.co.in/wp-content/uploads/2025/10/tl160-series-500x500-1.webp" alt="CNC Machining" className="img-fluid" style={{
                          height: '220px',
+                         width: '100%',
                          objectFit: 'cover',
-                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
+                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15)',
                          borderRadius: '20px',
-                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
-                         backdropFilter: 'blur(20px)',
-                         border: '1px solid rgba(255, 255, 255, 0.3)',
-                         transition: 'all 0.3s ease'
+                         border: '1px solid rgba(255, 255, 255, 0.3)'
                        }} onError={(e) => e.target.style.display = 'none'} />
                        <div style={{
                          position: 'absolute',
@@ -61,9 +59,7 @@ const Capabilities = () => {
                          left: 0,
                          right: 0,
                          height: '4px',
-                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
-                         backgroundSize: '200% 100%',
-                         animation: 'shimmer 3s ease-in-out infinite'
+                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)'
                        }}></div>
                      </motion.div>
                      <h4 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>CNC MACHINING</h4>
@@ -90,13 +86,11 @@ const Capabilities = () => {
                      >
                        <img src="https://sdn.co.in/wp-content/uploads/2025/10/machining-and-secondary-operation.png" alt="Secondary Operations" className="img-fluid" style={{
                          height: '220px',
+                         width: '100%',
                          objectFit: 'cover',
-                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
+                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15)',
                          borderRadius: '20px',
-                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
-                         backdropFilter: 'blur(20px)',
-                         border: '1px solid rgba(255, 255, 255, 0.3)',
-                         transition: 'all 0.3s ease'
+                         border: '1px solid rgba(255, 255, 255, 0.3)'
                        }} onError={(e) => e.target.style.display = 'none'} />
                        <div style={{
                          position: 'absolute',
@@ -104,9 +98,7 @@ const Capabilities = () => {
                          left: 0,
                          right: 0,
                          height: '4px',
-                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
-                         backgroundSize: '200% 100%',
-                         animation: 'shimmer 3s ease-in-out infinite'
+                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)'
                        }}></div>
                      </motion.div>
                      <h4 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>SECONDARY OPERATIONS</h4>
@@ -133,13 +125,11 @@ const Capabilities = () => {
                      >
                        <img src="https://sdn.co.in/wp-content/uploads/2025/10/dedicated-tool-room.png" alt="Tooling" className="img-fluid" style={{
                          height: '220px',
+                         width: '100%',
                          objectFit: 'cover',
-                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
+                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15)',
                          borderRadius: '20px',
-                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
-                         backdropFilter: 'blur(20px)',
-                         border: '1px solid rgba(255, 255, 255, 0.3)',
-                         transition: 'all 0.3s ease'
+                         border: '1px solid rgba(255, 255, 255, 0.3)'
                        }} onError={(e) => e.target.style.display = 'none'} />
                        <div style={{
                          position: 'absolute',
@@ -147,9 +137,7 @@ const Capabilities = () => {
                          left: 0,
                          right: 0,
                          height: '4px',
-                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
-                         backgroundSize: '200% 100%',
-                         animation: 'shimmer 3s ease-in-out infinite'
+                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)'
                        }}></div>
                      </motion.div>
                      <h4 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>TOOLING & FIXTURE DEVELOPMENT</h4>
@@ -159,7 +147,7 @@ const Capabilities = () => {
                   </Col>
                </Row>
 
-               <hr style={{ borderColor: '#4169E1', borderWidth: '2px', opacity: 0.5, marginBottom: '50px' }} />
+               <hr style={{ borderColor: '#4169E1', borderWidth: '2px', opacity: 0.3, marginBottom: '50px' }} />
 
                <Row className="g-5 text-center mb-5">
                   <Col lg={4}>
@@ -177,7 +165,7 @@ const Capabilities = () => {
                   <Col lg={4}>
                      <h4 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>QUALITY CONTROL & INSPECTION</h4>
                      <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#444', textAlign: 'justify' }}>
-                        Quality is the foundation of everything we do at SBT Engineering. Each new product undergoes Advanced Product Quality Planning (APQP) to ensure complete understanding of customer requirements. We apply global quality methodologies such as FMEA, MSA, SPC, and PPAP to develop robust processes. All critical dimensions are verified using precision instruments and gauges, and a Coordinate Measuring Machine (CMM) is planned for installation to further enhance accuracy and validation capabilities. Our commitment to continuous improvement, traceability, and process control ensures that every component meets or exceeds customer expectations — consistently and reliably.
+                        Quality is the foundation of everything we do at SBT Engineering. Each new product undergoes Advanced Product Quality Planning (APQP) to ensure complete understanding of customer requirements. We apply global quality methodologies such as FMEA, MSA, SPC, and PPAP to develop robust processes. All critical dimensions are verified using precision instruments and gauges to further enhance accuracy and validation capabilities.
                      </p>
                   </Col>
                </Row>
@@ -188,198 +176,129 @@ const Capabilities = () => {
          <section className="py-5 bg-light" style={{ paddingBottom: '100px' }}>
             <Container>
                <div className="text-center mb-5">
-                  <h2 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '28px' }}>Machine Capacity</h2>
+                  <h2 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '32px' }}>Machine Capacity</h2>
                </div>
 
                <style>
                   {`
-               .machine-table th { color: #006644; border: 1px solid #000; padding: 12px; text-align: center; font-weight: bold; background: #fff; }
-               .machine-table td { border: 1px solid #000; padding: 12px; text-align: center; font-weight: bold; background: #fff; }
-             `}
+                    .machine-table th { color: #fff; background: #4169E1; border: 1px solid #ddd; padding: 12px; text-align: center; font-weight: bold; }
+                    .machine-table td { border: 1px solid #ddd; padding: 12px; text-align: center; background: #fff; }
+                    .machine-table tr:nth-child(even) td { background: #f9f9f9; }
+                  `}
                </style>
 
-               {/* Row 1 */}
-               <Row className="align-items-center justify-content-center mb-5 pb-4 border-bottom">
-                  <Col lg={5} className="text-center mb-4 mb-lg-0">
+               {/* CNC Turning Centres Row */}
+               <Row className="align-items-center justify-content-center mb-5">
+                  <Col lg={11}>
                      <motion.div
                        style={{
-                         position: 'relative',
-                         overflow: 'hidden',
-                         borderRadius: '20px'
-                       }}
-                       initial={{ opacity: 0, x: -30 }}
-                       whileInView={{ opacity: 1, x: 0 }}
-                       viewport={{ once: true }}
-                       transition={{ duration: 0.8, delay: 0.1 }}
-                       whileHover={{
-                         scale: 1.02,
-                         transition: { duration: 0.3 }
-                       }}
-                     >
-                       <img src="https://sdn.co.in/wp-content/uploads/2025/10/Screenshot-2025-10-05-113649-768x643.png" alt="CNC Turning" className="img-fluid" style={{
-                         maxHeight: '350px',
-                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
+                         boxShadow: '0 15px 35px rgba(0, 0, 0, 0.1)',
                          borderRadius: '20px',
-                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
-                         backdropFilter: 'blur(20px)',
-                         border: '1px solid rgba(255, 255, 255, 0.3)',
-                         transition: 'all 0.3s ease'
-                       }} onError={(e) => { e.target.onError = null; e.target.src = "/gallery/9.jpeg" }} />
-                       <div style={{
-                         position: 'absolute',
-                         top: 0,
-                         left: 0,
-                         right: 0,
-                         height: '4px',
-                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
-                         backgroundSize: '200% 100%',
-                         animation: 'shimmer 3s ease-in-out infinite'
-                       }}></div>
-                     </motion.div>
-                  </Col>
-                  <Col lg={6}>
-                     <motion.div
-                       style={{
-                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
-                         borderRadius: '20px',
-                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
-                         backdropFilter: 'blur(20px)',
-                         border: '1px solid rgba(255, 255, 255, 0.3)',
-                         overflow: 'hidden',
-                         position: 'relative'
+                         background: '#fff',
+                         border: '1px solid #eee',
+                         overflow: 'hidden'
                        }}
-                       initial={{ opacity: 0, x: 30 }}
-                       whileInView={{ opacity: 1, x: 0 }}
+                       initial={{ opacity: 0, y: 30 }}
+                       whileInView={{ opacity: 1, y: 0 }}
                        viewport={{ once: true }}
-                       transition={{ duration: 0.8, delay: 0.2 }}
-                       whileHover={{
-                         scale: 1.01,
-                         boxShadow: '0 35px 70px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
-                         transition: { duration: 0.3 }
-                       }}
                      >
-                       <div style={{
-                         position: 'absolute',
-                         top: 0,
-                         left: 0,
-                         right: 0,
-                         height: '4px',
-                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
-                         backgroundSize: '200% 100%',
-                         animation: 'shimmer 3s ease-in-out infinite'
-                       }}></div>
+                       <div className="p-3 text-center" style={{ background: '#4169E1', color: '#fff', fontWeight: 'bold' }}>
+                          CNC TURNING CENTRES
+                       </div>
                        <table className="table machine-table w-100 mb-0">
-                        <thead>
-                           <tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr>
-                        </thead>
-                        <tbody>
-                           <tr><td>CNC Turning<br />Centre</td><td>Lokesh-TL160</td><td>270x200<br />mm</td><td>5</td></tr>
-                           <tr><td>CNC Turning<br />Centre</td><td>GlobalVagor-130</td><td>275x325<br />mm</td><td>3</td></tr>
-                           <tr><td>CNC Turning<br />Centre</td><td>Lokesh-TL200</td><td>270x200<br />mm</td><td>10</td></tr>
-                           <tr><td>CNC Turning<br />Centre</td><td>LMW-LL20TL7</td><td>270x700<br />mm</td><td>1</td></tr>
-                             <tr><td>CNC Turning<br />Centre</td><td>Jyoti</td><td>270x1200<br />mm</td><td>1</td></tr>
-                        </tbody>
-                     </table>
+                         <thead>
+                            <tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr>
+                         </thead>
+                         <tbody>
+                            <tr><td>CNC Turning Centre</td><td>Lokesh-TL160</td><td>270x200 mm</td><td>5</td></tr>
+                            <tr><td>CNC Turning Centre</td><td>GlobalVagor-130</td><td>275x325 mm</td><td>3</td></tr>
+                            <tr><td>CNC Turning Centre</td><td>Lokesh-TL200</td><td>270x200 mm</td><td>10</td></tr>
+                            <tr><td>CNC Turning Centre</td><td>LMW-LL20TL7</td><td>270x700 mm</td><td>1</td></tr>
+                            <tr><td>CNC Turning Centre</td><td>Jyoti</td><td>270x1200 mm</td><td>1</td></tr>
+                         </tbody>
+                       </table>
                      </motion.div>
                   </Col>
                </Row>
 
-               
-               
-
-               {/* Row 4 - Two tables */}
-               <Row className="justify-content-center mt-5">
-                  <Col lg={5} className="mb-5 mb-lg-0">
-                     <motion.div
-                       style={{
-                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
-                         borderRadius: '20px',
-                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
-                         backdropFilter: 'blur(20px)',
-                         border: '1px solid rgba(255, 255, 255, 0.3)',
-                         overflow: 'hidden',
-                         position: 'relative'
-                       }}
-                       initial={{ opacity: 0, y: 30 }}
-                       whileInView={{ opacity: 1, y: 0 }}
-                       viewport={{ once: true }}
-                       transition={{ duration: 0.8, delay: 0.7 }}
-                       whileHover={{
-                         scale: 1.01,
-                         boxShadow: '0 35px 70px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
-                         transition: { duration: 0.3 }
-                       }}
-                     >
-                       <div style={{
-                         position: 'absolute',
-                         top: 0,
-                         left: 0,
-                         right: 0,
-                         height: '4px',
-                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
-                         backgroundSize: '200% 100%',
-                         animation: 'shimmer 3s ease-in-out infinite'
-                       }}></div>
-                     <div className="text-center mb-4">
-                        <img src= {threadmachine} alt="Thread Rolling" className="img-fluid" style={{ maxHeight: '250px' }} onError={(e) => e.target.style.display = 'none'} />
-                     </div>
-                     <table className="table machine-table w-100 mb-0">
-                        <thead>
-                           <tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr>
-                        </thead>
-                        <tbody>
-                           <tr><td>Thread<br />Rolling</td><td>MTE</td><td>30 Ton</td><td>1</td></tr>
-                        </tbody>
-                     </table>
-                     </motion.div>
-                  </Col>
-                  <Col lg={1}></Col>
+               {/* Secondary Machines Row */}
+               <Row className="justify-content-center g-4 mb-5">
                   <Col lg={5}>
-                     <motion.div
-                       style={{
-                         boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08)',
-                         borderRadius: '20px',
-                         background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
-                         backdropFilter: 'blur(20px)',
-                         border: '1px solid rgba(255, 255, 255, 0.3)',
-                         overflow: 'hidden',
-                         position: 'relative'
-                       }}
-                       initial={{ opacity: 0, y: 30 }}
-                       whileInView={{ opacity: 1, y: 0 }}
-                       viewport={{ once: true }}
-                       transition={{ duration: 0.8, delay: 0.8 }}
-                       whileHover={{
-                         scale: 1.01,
-                         boxShadow: '0 35px 70px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
-                         transition: { duration: 0.3 }
-                       }}
-                     >
-                       <div style={{
-                         position: 'absolute',
-                         top: 0,
-                         left: 0,
-                         right: 0,
-                         height: '4px',
-                         background: 'linear-gradient(90deg, #4169E1 0%, #009CD7 50%, #4169E1 100%)',
-                         backgroundSize: '200% 100%',
-                         animation: 'shimmer 3s ease-in-out infinite'
-                       }}></div>
-                     <div className="text-center mb-4">
-                        <img src={Bandsaw} alt="Bandsaw" className="img-fluid" style={{ maxHeight: '250px' }} onError={(e) => e.target.style.display = 'none'} />
-                     </div>
-                     <table className="table machine-table w-100 mb-0">
-                        <thead>
-                           <tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr>
-                        </thead>
-                        <tbody>
-                           <tr><td>Bandsaw<br />Cutting<br />Machine</td><td>Laxson</td><td>200 mm</td><td>1</td></tr>
-                        </tbody>
-                     </table>
+                     <motion.div style={{ boxShadow: '0 15px 35px rgba(0,0,0,0.1)', borderRadius: '20px', background: '#fff', overflow: 'hidden' }} initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+                        <div className="p-3 text-center" style={{ background: '#4169E1', color: '#fff', fontWeight: 'bold' }}>THREAD ROLLING</div>
+                        <table className="table machine-table w-100 mb-0">
+                           <thead><tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr></thead>
+                           <tbody><tr><td>Thread Rolling</td><td>MTE</td><td>30 Ton</td><td>1</td></tr></tbody>
+                        </table>
+                     </motion.div>
+                  </Col>
+                  <Col lg={5}>
+                     <motion.div style={{ boxShadow: '0 15px 35px rgba(0,0,0,0.1)', borderRadius: '20px', background: '#fff', overflow: 'hidden' }} initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+                        <div className="p-3 text-center" style={{ background: '#4169E1', color: '#fff', fontWeight: 'bold' }}>BANDSAW CUTTING</div>
+                        <table className="table machine-table w-100 mb-0">
+                           <thead><tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr></thead>
+                           <tbody><tr><td>Bandsaw Machine</td><td>Laxson</td><td>200 mm</td><td>1</td></tr></tbody>
+                        </table>
                      </motion.div>
                   </Col>
                </Row>
 
+               {/* Other Machineries Row */}
+               <Row className="justify-content-center mb-5">
+                  <Col lg={11}>
+                     <motion.div style={{ boxShadow: '0 15px 35px rgba(0,0,0,0.1)', borderRadius: '20px', background: '#fff', overflow: 'hidden' }} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                        <div className="p-3 text-center" style={{ background: '#4169E1', color: '#fff', fontWeight: 'bold' }}>OTHER MACHINERIES</div>
+                        <table className="table machine-table w-100 mb-0">
+                           <thead><tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr></thead>
+                           <tbody>
+                              <tr><td>CENTRELESS GRINDING</td><td>BHAGWAN SONS 150</td><td>Ø150 MM</td><td>2</td></tr>
+                              <tr><td>CENTRELESS GRINDING HCG 75</td><td>BHAGWAN SONS 100</td><td>Ø75 MM</td><td>3</td></tr>
+                              <tr><td>SHOT PEENING</td><td>TECHNO BRIGHT</td><td>150kg</td><td>1</td></tr>
+                              <tr><td>DRILLING MACHINE</td><td>ITCO</td><td>13 mm</td><td>1</td></tr>
+                              <tr><td>AIR COMPRESSOR</td><td>ELGI</td><td>220 Ltr</td><td>1</td></tr>
+                              <tr><td>BEND REMOVING MACHINE</td><td>-</td><td>-</td><td>1</td></tr>
+                              <tr><td>BENCH GRINDING MACHINE</td><td>-</td><td>-</td><td>1</td></tr>
+                           </tbody>
+                        </table>
+                     </motion.div>
+                  </Col>
+               </Row>
+
+               {/* Quality & Inspection Equipments Row */}
+               <Row className="justify-content-center">
+                  <Col lg={11}>
+                     <motion.div style={{ boxShadow: '0 25px 50px rgba(0,0,0,0.15)', borderRadius: '20px', background: '#fff', overflow: 'hidden' }} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                        <div className="p-3 text-center" style={{ background: '#4169E1', color: '#fff', fontWeight: 'bold', fontSize: '20px' }}>LIST OF EQUIPMENTS (INSPECTION / QUALITY CONTROL)</div>
+                        <div className="table-responsive">
+                           <table className="table machine-table w-100 mb-0" style={{ fontSize: '13px' }}>
+                              <thead>
+                                 <tr><th>Sl.No</th><th>Instrument Name</th><th>Range</th><th>Make</th><th>Qty</th></tr>
+                              </thead>
+                              <tbody>
+                                 <tr><td>01</td><td>DIGITAL VERNIER</td><td>0-300 mm</td><td>MITUTOYO</td><td>02</td></tr>
+                                 <tr><td>02</td><td>VERNIER CALLIPER</td><td>0-300 mm</td><td>MITUTOYO</td><td>01</td></tr>
+                                 <tr><td>03</td><td>VERNIER CALLIPER</td><td>0-150 mm</td><td>MITUTOYO</td><td>02</td></tr>
+                                 <tr><td>04</td><td>VERNIER CALLIPER</td><td>0-600 mm</td><td>MITUTOYO</td><td>01</td></tr>
+                                 <tr><td>05</td><td>MICROMETER</td><td>0-25 mm</td><td>MITUTOYO</td><td>10</td></tr>
+                                 <tr><td>06</td><td>MICROMETER</td><td>25-50mm</td><td>MITUTOYO</td><td>02</td></tr>
+                                 <tr><td>07</td><td>MICROMETER</td><td>50-75mm</td><td>MITUTOYO</td><td>01</td></tr>
+                                 <tr><td>08</td><td>BLADE MICROMETER</td><td>0.25 mm</td><td>MITUTOYO</td><td>01</td></tr>
+                                 <tr><td>09</td><td>DIGITAL MICROMETER</td><td>0-25 mm</td><td>MITUTOYO</td><td>02</td></tr>
+                                 <tr><td>10</td><td>DIGITAL MICROMETER</td><td>25-50 mm</td><td>MITUTOYO</td><td>02</td></tr>
+                                 <tr><td>11</td><td>PLUNGER DIAL</td><td>0 - 10 mm</td><td>MITUTOYO</td><td>05</td></tr>
+                                 <tr><td>12</td><td>LEVER DIAL</td><td>0-0.8</td><td>MITUTOYO</td><td>02</td></tr>
+                                 <tr><td>13</td><td>LEVER DIAL</td><td>0-0.14</td><td>MITUTOYO</td><td>02</td></tr>
+                                 <tr><td>14</td><td>SURFACE TABLE</td><td>600x600</td><td>MITUTOYO</td><td>02</td></tr>
+                                 <tr><td>15</td><td>PROFILE PROJECTOR</td><td>200x100</td><td>MITUTOYO</td><td>01</td></tr>
+                                 <tr><td>16</td><td>CONTOUR MEASURING MACHINE</td><td>X-140mm, Y-60mm, Z-350mm</td><td>MAHR</td><td>01</td></tr>
+                                 <tr><td>17</td><td>ACCURATE BRIDGE TYPE CMM MACHINE</td><td>500mm X 600mm X 400mm</td><td>SPECTRA</td><td>01 <small>(Order Placed)</small></td></tr>
+                                 <tr><td>18</td><td>VIDEO MEASURING SYSTEM</td><td>X-300mm, Y-200mm, Z-200mm</td><td>MAHR</td><td>01</td></tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </motion.div>
+                  </Col>
+               </Row>
             </Container>
          </section>
       </div>
