@@ -150,8 +150,8 @@ const Home = () => {
             </Col>
 
             {/* Right Column: Tall Video */}
-            <Col lg={7}>
-              <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }} style={{ height: '100%', paddingLeft: '30px' }}>
+            <Col lg={7} className="d-flex align-items-center justify-content-center" style={{ minHeight: '100%' }}>
+              <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }} style={{ width: '100%', maxWidth: 600, paddingLeft: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '60px' }}>
                 <video 
                   autoPlay 
                   loop 
@@ -162,7 +162,7 @@ const Home = () => {
                       e.target.currentTime = 0;
                     }
                   }}
-                  style={{ width: '100%', height: 'auto', minHeight: '300px', objectFit: 'cover', borderRadius: '15px' }}
+                    style={{ width: '100%', height: 'auto', minHeight: '500px', objectFit: 'cover', borderRadius: '15px' }}
                 >
                      <source src={homeVideo} type="video/mp4" />
                 </video>
