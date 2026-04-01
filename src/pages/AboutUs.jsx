@@ -12,8 +12,8 @@ import meiLogo from '../assets/MEI.jpg';
 import hvfLogo from '../assets/HVF.jpg';
 import tafeLogo from '../assets/TAFE_Logo.jpg';
 import preFooterImg from '../assets/pre-footer images.jpg';
-import newVideo from '../assets/1.mp4';
 import isoCertImg from '../assets/certification_iso.png';
+import homeVideo from '../assets/home-video.mp4';
 
 const AboutUs = () => {
   return (
@@ -240,6 +240,32 @@ const AboutUs = () => {
                  </Col>
                ))}
             </Row>
+          </div>
+
+          {/* New Video Section */}
+          <div className="mt-5 mb-5">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              style={{ width: '100%', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
+            >
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                onTimeUpdate={(e) => {
+                  if (e.target.currentTime >= 20) {
+                    e.target.currentTime = 0;
+                  }
+                }}
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              >
+                <source src={homeVideo} type="video/mp4" />
+              </video>
+            </motion.div>
           </div>
         </Container>
       </section>

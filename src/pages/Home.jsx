@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiAward, FiTarget, FiClock, FiUsers } from 'react-icons/fi';
 import heroimg from '../assets/hero.png';
-import newvideo from '../assets/1.mp4'
+import homeVideo from '../assets/home-video.mp4'
 const Home = () => {
   return (
     <div>
@@ -155,8 +155,19 @@ const Home = () => {
             {/* Right Column: Tall Video */}
             <Col lg={7}>
               <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }} style={{ height: '100%', paddingLeft: '30px' }}>
-                <video autoPlay loop muted playsInline style={{ width: '100%', height: '100%', minHeight: '600px', objectFit: 'cover' }}>
-                     <source src= {newvideo} type="video/mp4" />
+                <video 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline 
+                  onTimeUpdate={(e) => {
+                    if (e.target.currentTime >= 20) {
+                      e.target.currentTime = 0;
+                    }
+                  }}
+                  style={{ width: '100%', height: '100%', minHeight: '600px', objectFit: 'cover', borderRadius: '15px' }}
+                >
+                     <source src={homeVideo} type="video/mp4" />
                 </video>
                 {/* Intro & New Statistics Section */}
                 <div style={{

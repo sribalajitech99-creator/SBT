@@ -4,6 +4,7 @@ import { FiThermometer, FiLayers, FiCheckCircle } from 'react-icons/fi';
 import newVideo from '../assets/852341-hd_1920_1080_30fps.mp4';
 import threadmachine from '../assets/Thread rolling.png';
 import Bandsaw from '../assets/Bandsaw.png';
+import homeVideo from '../assets/home-video.mp4';
 
 const Capabilities = () => {
    return (
@@ -303,6 +304,34 @@ const Capabilities = () => {
                      </motion.div>
                   </Col>
                </Row>
+            </Container>
+         </section>
+
+         {/* Bottom Video Section */}
+         <section className="py-5 bg-white">
+            <Container>
+               <motion.div
+                 initial={{ opacity: 0, scale: 0.95 }}
+                 whileInView={{ opacity: 1, scale: 1 }}
+                 viewport={{ once: true }}
+                 transition={{ duration: 0.8 }}
+                 style={{ width: '100%', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.1)' }}
+               >
+                 <video 
+                   autoPlay 
+                   loop 
+                   muted 
+                   playsInline 
+                   onTimeUpdate={(e) => {
+                     if (e.target.currentTime >= 20) {
+                       e.target.currentTime = 0;
+                     }
+                   }}
+                   style={{ width: '100%', height: 'auto', display: 'block' }}
+                 >
+                   <source src={homeVideo} type="video/mp4" />
+                 </video>
+               </motion.div>
             </Container>
          </section>
       </div>
