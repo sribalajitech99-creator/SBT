@@ -18,6 +18,21 @@ import homeVideo from '../assets/Home.mp4';
 const AboutUs = () => {
   return (
     <div>
+      <style>
+        {`
+          @media (max-width: 767px) {
+            .vision-mission-card {
+              padding: 30px 20px !important;
+            }
+            .vision-mission-card h2 {
+              font-size: 24px !important;
+            }
+            .pre-footer-mobile {
+              height: 200px !important;
+            }
+          }
+        `}
+      </style>
       {/* Hero Image Section */}
       <section style={{ position: 'relative', width: '100%', height: '500px', overflow: 'hidden' }}>
         <video 
@@ -71,7 +86,7 @@ const AboutUs = () => {
               { label: "Power Backup", value: "300 Kva Full Backup", icon: <FiZap size={20} /> },
               { label: "Team Strength", value: "75+ Professionals", icon: <FiUsers size={20} /> }
             ].map((stat, idx) => (
-              <Col lg={2} md={4} xs={6} key={idx}>
+              <Col lg={2} md={4} sm={6} xs={12} key={idx}>
                 <div style={{
                   backgroundColor: '#4169E1',
                   padding: '15px 10px',
@@ -98,6 +113,7 @@ const AboutUs = () => {
           <Row className="g-4 mb-5 align-items-stretch">
             <Col md={6}>
                <motion.div
+                 className="vision-mission-card"
                  style={{
                    padding: '60px 40px',
                    height: '100%',
@@ -117,6 +133,7 @@ const AboutUs = () => {
             </Col>
             <Col md={6}>
                <motion.div
+                 className="vision-mission-card"
                  style={{
                    padding: '60px 40px',
                    height: '100%',
@@ -271,7 +288,7 @@ const AboutUs = () => {
       </section>
 
       {/* Pre-footer Image Section */}
-      <div style={{ height: '400px', backgroundImage: `url("${preFooterImg}")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="pre-footer-mobile" style={{ height: '400px', backgroundImage: `url("${preFooterImg}")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       </div>
     </div>
   );
