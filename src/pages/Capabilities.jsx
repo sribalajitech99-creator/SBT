@@ -4,7 +4,7 @@ import { FiThermometer, FiLayers, FiCheckCircle } from 'react-icons/fi';
 import newVideo from '../assets/852341-hd_1920_1080_30fps.mp4';
 import threadmachine from '../assets/Thread rolling.png';
 import Bandsaw from '../assets/Bandsaw.png';
-import homeVideo from '../assets/home-video.mp4';
+import homeVideo from '../assets/Home.mp4';
 
 const Capabilities = () => {
    return (

@@ -13,7 +13,7 @@ import hvfLogo from '../assets/HVF.jpg';
 import tafeLogo from '../assets/TAFE_Logo.jpg';
 import preFooterImg from '../assets/pre-footer images.jpg';
 import isoCertImg from '../assets/certification_iso.png';
-import homeVideo from '../assets/home-video.mp4';
+import homeVideo from '../assets/Home.mp4';
 
 const AboutUs = () => {
   return (

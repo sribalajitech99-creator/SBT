@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiAward, FiTarget, FiClock, FiUsers } from 'react-icons/fi';
 import heroimg from '../assets/hero.png';
-import homeVideo from '../assets/Home-video.mp4';
+import homeVideo from '../assets/Home.mp4';
 const Home = () => {
   return (
     <div>
