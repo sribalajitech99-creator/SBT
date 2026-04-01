@@ -18,21 +18,6 @@ import homeVideo from '../assets/Home.mp4';
 const AboutUs = () => {
   return (
     <div>
-      <style>
-        {`
-          @media (max-width: 767px) {
-            .vision-mission-card {
-              padding: 30px 20px !important;
-            }
-            .vision-mission-card h2 {
-              font-size: 24px !important;
-            }
-            .pre-footer-mobile {
-              height: 200px !important;
-            }
-          }
-        `}
-      </style>
       {/* Hero Image Section */}
       <section style={{ position: 'relative', width: '100%', height: '500px', overflow: 'hidden' }}>
         <video 

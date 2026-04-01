@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="hero-sdn" style={{ position: 'relative', minHeight: '85vh', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
+      <section className="hero-sdn" style={{ position: 'relative', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
         <img src={heroimg} alt="Hero Background" className="hero-bg-sdn" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0 }} />
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.45)', zIndex: 1 }}></div>
 
@@ -16,24 +16,21 @@ const Home = () => {
           <Row>
             <Col lg={8} md={10}>
               <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-                <h1 style={{ fontFamily: '"Open Sans", Sans-serif', fontWeight: 600, fontSize: '64px', lineHeight: 1.2, color: '#fff', marginBottom: '15px' }}>
+                <h1 className="hero-h1" style={{ color: '#fff', marginBottom: '15px' }}>
                   HIGH PRECISION <br /> ONTIME DELIVERY
                 </h1>
-                <div style={{ fontFamily: '"Open Sans", Sans-serif', fontSize: '28px', fontWeight: 600, lineHeight: '60px', color: '#fff', marginBottom: '35px' }}>
+                <div className="hero-sub" style={{ color: '#fff', marginBottom: '35px' }}>
                   AUTOMATED PRODUCTION TECHNOLOGY
                 </div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '10px' }}>
                   <Link
                     to="/contact"
+                    className="btn-primary-sdn"
                     style={{
                       backgroundColor: '#009CD7',
                       color: '#fff',
                       textDecoration: 'none',
-                      padding: '20px 44px',
                       borderRadius: '30px',
-                      fontFamily: '"Roboto", Sans-serif',
-                      fontWeight: 500,
-                      fontSize: '18px',
                       display: 'inline-block',
                       transition: '0.3s',
                     }}
@@ -46,14 +43,14 @@ const Home = () => {
                       backgroundColor: 'transparent',
                       color: '#fff',
                       textDecoration: 'none',
-                      padding: '18px 32px',
                       borderRadius: '30px',
                       border: '1px solid rgba(255,255,255,0.35)',
+                      display: 'inline-block',
+                      transition: '0.3s',
+                      padding: '18px 32px',
                       fontFamily: '"Roboto", Sans-serif',
                       fontWeight: 500,
                       fontSize: '18px',
-                      display: 'inline-block',
-                      transition: '0.3s',
                     }}
                   >
                     VIEW CAPABILITIES
@@ -87,6 +84,7 @@ const Home = () => {
                 
                 {/* Stats Box properly placed within the left column */}
                 <motion.div
+                  className="stats-box premium-card-enhanced"
                   style={{
                     backgroundColor: '#fff',
                     padding: '30px',
@@ -98,7 +96,6 @@ const Home = () => {
                     background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(248, 250, 252, 0.95) 100%)',
                     backdropFilter: 'blur(20px)',
                     border: '1px solid rgba(255, 255, 255, 0.3)',
-                    position: 'relative',
                     overflow: 'hidden'
                   }}
                   initial={{ opacity: 0, y: 30 }}
@@ -165,7 +162,7 @@ const Home = () => {
                       e.target.currentTime = 0;
                     }
                   }}
-                  style={{ width: '100%', height: '100%', minHeight: '600px', objectFit: 'cover', borderRadius: '15px' }}
+                  style={{ width: '100%', height: 'auto', minHeight: '300px', objectFit: 'cover', borderRadius: '15px' }}
                 >
                      <source src={homeVideo} type="video/mp4" />
                 </video>
@@ -231,7 +228,7 @@ const Home = () => {
       </section>
 
       {/* Pre-footer Gear Image Section */}
-      <div style={{ height: '350px', backgroundImage: "url('https://sdn.co.in/wp-content/uploads/2025/10/shutterstock_1950663952-1-1.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="pre-footer-mobile" style={{ height: '350px', backgroundImage: "url('https://sdn.co.in/wp-content/uploads/2025/10/shutterstock_1950663952-1-1.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
       </div>
     </div>
   );

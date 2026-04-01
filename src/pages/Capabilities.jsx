@@ -48,7 +48,7 @@ const Capabilities = () => {
                        }}
                      >
                        <img src="https://sdn.co.in/wp-content/uploads/2025/10/tl160-series-500x500-1.webp" alt="CNC Machining" className="img-fluid" style={{
-                         height: '220px',
+                         maxHeight: '220px',
                          width: '100%',
                          objectFit: 'cover',
                          boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15)',
@@ -87,7 +87,7 @@ const Capabilities = () => {
                        }}
                      >
                        <img src="https://sdn.co.in/wp-content/uploads/2025/10/machining-and-secondary-operation.png" alt="Secondary Operations" className="img-fluid" style={{
-                         height: '220px',
+                         maxHeight: '220px',
                          width: '100%',
                          objectFit: 'cover',
                          boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15)',
@@ -126,7 +126,7 @@ const Capabilities = () => {
                        }}
                      >
                        <img src="https://sdn.co.in/wp-content/uploads/2025/10/dedicated-tool-room.png" alt="Tooling" className="img-fluid" style={{
-                         height: '220px',
+                         maxHeight: '220px',
                          width: '100%',
                          objectFit: 'cover',
                          boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15)',
