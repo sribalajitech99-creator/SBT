@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiAward, FiTarget, FiClock, FiUsers } from 'react-icons/fi';
 import heroimg from '../assets/hero.png';
+import homeleft from '../assets/Home left image.jpg';
 import homeVideo from '../assets/Home.mp4';
 const Home = () => {
   return (
@@ -77,10 +78,10 @@ const Home = () => {
                   Manufacturer of Precision Machined Components for Automobile and General Engineering Industries
                 </h5>
                 <p style={{ fontFamily: '"Roboto", Sans-serif', color: '#000', fontWeight: 300, fontSize: '19px', lineHeight: '1.6', marginBottom: '30px' }}>
-                  With state-of-the-art CNC and VMC technology, Sri Balaji Tech provides world-class quality and consistency across every part we produce.
+                  With state-of-the-art CNC, Sri Balaji Tech provides world-class quality and consistency across every part we produce.
                 </p>
                 
-                <img src="https://sdn.co.in/wp-content/uploads/2025/10/shutterstock_1020591757-1.png" alt="CNC Process" style={{ width: '100%', height: 'auto', objectFit: 'cover', marginBottom: '30px' }} />
+                <img src={homeleft} alt="CNC Process" style={{ width: '100%', height: '450px', objectFit: 'cover', marginBottom: '30px', borderRadius: '20px' }} />
                 
                 {/* Stats Box properly placed within the left column */}
                 <motion.div
@@ -107,7 +108,6 @@ const Home = () => {
                     boxShadow: '0 35px 70px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15), 0 12px 25px rgba(0, 0, 0, 0.12), 0 6px 15px rgba(0, 0, 0, 0.1)',
                     transition: { duration: 0.3 }
                   }}
-                  className="premium-card-enhanced"
                 >
                   <div style={{
                     position: 'absolute',
@@ -141,7 +141,7 @@ const Home = () => {
                     <div style={{ flex: '1 1 50%', paddingLeft: '15px' }}>
                        <div style={{ fontSize: '16px', fontFamily: '"Roboto", Sans-serif', color: '#000', fontWeight: '500', lineHeight: '1.4' }}>
                          <span style={{ display: 'block', fontWeight: 'bold' }}>ISO 9001:2015</span>
-                         certified and IATF 16949 Certificate Audit Completed 31July25
+                         certified <br /> <span style={{ display: 'block', fontWeight: 'bold' }}>IATF 16949</span> Yet to Certified
                        </div>
                     </div>
                   </div>
@@ -177,20 +177,20 @@ const Home = () => {
                 }}>
                   <Row className="g-4 text-center">
                     <Col sm={6} lg={3}>
-                      <div style={{ fontWeight: 'bold', fontSize: '24px', color: '#4169E1' }}>16,000 sq. ft.</div>
+                      <div style={{ fontWeight: 'bold', fontSize: '24px', color: '#4169E1' }}>7,000 <br /> sq. ft.</div>
                       <div style={{ fontSize: '14px', color: '#666' }}>Modern Production Facility</div>
                     </Col>
                     <Col sm={6} lg={3}>
-                      <div style={{ fontWeight: 'bold', fontSize: '24px', color: '#4169E1' }}>18 Unit</div>
+                      <div style={{ fontWeight: 'bold', fontSize: '24px', color: '#4169E1' }}>18 <br /> Unit</div>
                       <div style={{ fontSize: '14px', color: '#666' }}>CNC Machining Centers</div>
                     </Col>
                     <Col sm={6} lg={3}>
-                      <div style={{ fontWeight: 'bold', fontSize: '24px', color: '#4169E1' }}>300 Kva</div>
-                      <div style={{ fontSize: '14px', color: '#666' }}>Power backup (Gen Set)</div>
+                       <div style={{ fontWeight: 'bold', fontSize: '24px', color: '#4169E1' }}>ISO 9001:2015</div>
+                      <div style={{ fontSize: '14px', color: '#666' }}>Certified Standards</div>
                     </Col>
                     <Col sm={6} lg={3}>
-                      <div style={{ fontWeight: 'bold', fontSize: '24px', color: '#4169E1' }}>ISO 9001:2015</div>
-                      <div style={{ fontSize: '14px', color: '#666' }}>Certified Standards</div>
+                      <div style={{ fontWeight: 'bold', fontSize: '24px', color: '#4169E1' }}>IATF 16949</div>
+                      <div style={{ fontSize: '14px', color: '#666' }}>Yet to Certified</div>
                     </Col>
                   </Row>
                 </div>

@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { FiCalendar, FiMaximize, FiActivity, FiZap, FiUsers } from 'react-icons/fi';
-import heroVideo from '../assets/vecteezy_the-5-axis-cnc-milling-machine-cutting-the-metal-mold-part_70918760.mp4';
+import heroVideo from '../assets/Hero2.mp4';
 import img1 from '../assets/200.webp'
 import galaLogo from '../assets/Gala.jpg';
 import sundramLogo from '../assets/BMQRep_Logos_Interior_Sundram.png';
@@ -26,7 +26,7 @@ const AboutUs = () => {
           loop 
           muted 
           playsInline
-          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
+          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: 'brightness(1.2) contrast(1.1)' }} 
         />
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0, 0, 0, 0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -46,7 +46,7 @@ const AboutUs = () => {
                   Sri Balaji Tech was established in <strong>1998</strong> by <strong>Mr. D. Ravi</strong>, a visionary technocrat. Starting with a focus on precision machining, the company has grown steadily over two decades, venturing into CNC machining in 2004 and full finished part manufacturing in 2008.
                 </p>
                 <p style={{ lineHeight: '1.8', color: '#444' }}>
-                  Today, we operate from a state-of-the-art **16,000 sq. ft.** facility in the Ambattur Industrial Estate, Chennai. With constant innovation, we have diversified into both automotive and non-automotive sectors, achieving IATF/ISO 9001:2015 certifications and implementing advanced quality practices like 5S and Quality Circles.
+                  Today, we operate from a state-of-the-art **7,000 sq. ft.** facility in the Ambattur Industrial Estate, Chennai. With constant innovation, we have diversified into both automotive and non-automotive sectors, achieving ISO 9001:2015 certifications and IATF 16949 yet to certifed and implementing advanced quality practices like 5S and Quality Circles.
                 </p>
               </motion.div>
             </Col>
@@ -66,10 +66,10 @@ const AboutUs = () => {
           <Row className="text-center g-3 mb-5 align-items-stretch mx-auto justify-content-center" style={{ maxWidth: '950px' }}>
             {[
               { label: "Established", value: "1998 (26+ Years)", icon: <FiCalendar size={20} /> },
-              { label: "Facility Area", value: "16,000 Sq. Ft.", icon: <FiMaximize size={20} /> },
+              { label: "Facility Area", value: "7,000 Sq. Ft.", icon: <FiMaximize size={20} /> },
               { label: "Capacity", value: "85% - 90% Utilization", icon: <FiActivity size={20} /> },
-              { label: "Power Backup", value: "300 Kva Full Backup", icon: <FiZap size={20} /> },
-              { label: "Team Strength", value: "75+ Professionals", icon: <FiUsers size={20} /> }
+              { label: "Turnover", value: "₹ 6.5 Crores (2025-26)", icon: <FiZap size={20} /> },
+              { label: "Team Strength", value: "45 Professionals", icon: <FiUsers size={20} /> }
             ].map((stat, idx) => (
               <Col lg={2} md={4} sm={6} xs={12} key={idx}>
                 <div style={{

@@ -10,10 +10,17 @@ const Footer = () => {
         <Container>
           <Row className="align-items-start g-4 text-start">
             <Col lg={3} md={6}>
+              <div style={{ textTransform: 'uppercase', fontWeight: 700, fontSize: '18px', marginBottom: '20px' }}>CEO:</div>
+              <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
+              7299331000<br />
+               Purchase@sribalajitech.net
+              </div>
+            </Col>
+            <Col lg={3} md={6}>
               <div style={{ textTransform: 'uppercase', fontWeight: 700, fontSize: '18px', marginBottom: '20px' }}>ADMIN:</div>
               <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
                 8675243628<br />  
-                Bharathidasank@sribalajitech.net
+                Bharathi.k@sribalajitech.net
               </div>
             </Col>
             <Col lg={3} md={6}>
@@ -21,14 +28,7 @@ const Footer = () => {
               <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
                 7550022329<br />
                 Sales@sribalajitech.net
-              </div>
-            </Col>
-            <Col lg={3} md={6}>
-              <div style={{ textTransform: 'uppercase', fontWeight: 700, fontSize: '18px', marginBottom: '20px' }}>OFFICE:</div>
-              <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
-                7299331000<br />
-                Quality@sribalajitech.net<br />
-                Purchase@sribalajitech.net
+                 Quality@sribalajitech.net<br />
               </div>
             </Col>
             <Col lg={3} md={6} className="text-lg-end text-start mt-4 mt-lg-5">

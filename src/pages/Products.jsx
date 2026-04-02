@@ -72,7 +72,7 @@ const Products = () => {
             <h2 style={{ fontWeight: 'bold', fontSize: '28px', color: '#000', marginBottom: '10px' }}>PRODUCTS</h2>
             <h3 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '24px', marginBottom: '25px' }}>AUTOMOTIVE AND NON AUTOMOTIVE COMPONENTS</h3>
             <p style={{ fontSize: '14px', lineHeight: '1.8', color: '#444', maxWidth: '900px', margin: '0 auto', marginBottom: '15px' }}>
-              At SBTB, we specialize in the manufacturing of a wide range of precision components for the automotive industry, particularly in brake systems. Our components are used in two-wheelers, passenger cars, light and heavy commercial vehicles, and tractors. Products for foundation brakes and brake actuation form a significant part of our portfolio.
+              At Sri Balaji Tech, we specialize in the manufacturing of a wide range of precision components for the automotive industry, particularly in brake systems. Our components are used in two-wheelers, passenger cars, light and heavy commercial vehicles, and tractors. Products for foundation brakes and brake actuation form a significant part of our portfolio.
             </p>
             <p style={{ fontSize: '14px', lineHeight: '1.8', color: '#444', maxWidth: '900px', margin: '0 auto' }}>
               In line with our diversification strategy, we also manufacture high-quality components for non-automotive industries. These include hydraulic adapters, hose fittings, banjo bolts, as well as welded and brazed hydraulic fittings. Many of our products are custom-designed and manufactured to meet the unique requirements of our clients, ensuring the highest standards of quality and performance.

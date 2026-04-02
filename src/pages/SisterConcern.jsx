@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import Heroimage from "../assets/Home left image.jpg";
 
 const SisterConcern = () => {
   return (
@@ -7,7 +8,7 @@ const SisterConcern = () => {
       {/* Hero Image Section */}
       <section style={{ position: 'relative', width: '100%', height: '500px', overflow: 'hidden' }}>
         <img
-          src="https://images.pexels.com/photos/7254420/pexels-photo-7254420.jpeg"
+          src={Heroimage}
           alt="Sister Concern"
           style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
           onError={(e) => { e.target.onError = null; e.target.src = "/gallery/9.jpeg" }}

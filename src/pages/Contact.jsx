@@ -136,7 +136,7 @@ const Contact = () => {
                   </motion.div>
                   <div>
                     <h5 className="mb-1 fw-bold" style={{ color: 'var(--premium-dark)' }}>Phone</h5>
-                    <p className="text-muted mb-0 fs-5">+91 89257 46458</p>
+                    <p className="text-muted mb-0 fs-5">+91 7299331000</p>
                   </div>
                 </div>
 

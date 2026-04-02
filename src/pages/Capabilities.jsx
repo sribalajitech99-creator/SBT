@@ -1,9 +1,8 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { FiThermometer, FiLayers, FiCheckCircle } from 'react-icons/fi';
-import newVideo from '../assets/852341-hd_1920_1080_30fps.mp4';
-import threadmachine from '../assets/Thread rolling.png';
-import Bandsaw from '../assets/Bandsaw.png';
+import Herovideo from '../assets/Hero2.mp4';
+
 import homeVideo from '../assets/Home.mp4';
 
 const Capabilities = () => {
@@ -12,7 +11,7 @@ const Capabilities = () => {
          {/* Hero Image Section */}
          <section style={{ position: 'relative', width: '100%', height: '500px', overflow: 'hidden' }}>
             <video
-               src={newVideo}
+               src={Herovideo}
                autoPlay
                loop
                muted
@@ -66,7 +65,7 @@ const Capabilities = () => {
                      </motion.div>
                      <h4 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>CNC MACHINING</h4>
                      <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#444', textAlign: 'justify' }}>
-                        At SBT Engineering, we specialize in the precision machining of complex components using advanced CNC turning centers and Vertical Machining Centers (VMCs). Our machining capabilities cover a wide range of materials including carbon steel, alloy steel, stainless steel, aluminum, and brass. With multi-axis CNCs, VMCs with 4th-axis functionality, and robotic automation, we ensure consistent accuracy, repeatability, and productivity in every operation.
+                        At Sri Balaji Tech, we specialize in the precision machining of complex components using advanced CNC turning centers. Our machining capabilities cover a wide range of materials including carbon steel, alloy steel, stainless steel, aluminum, and brass. With multi-axis CNCs with 4th-axis functionality, we ensure consistent accuracy, repeatability, and productivity in every operation.
                      </p>
                   </Col>
                   <Col lg={4}>
@@ -170,7 +169,7 @@ const Capabilities = () => {
                      <div style={{ marginBottom: '15px', color: '#4169E1' }}><FiCheckCircle size={35} /></div>
                      <h4 style={{ color: '#4169E1', fontWeight: 'bold', fontSize: '18px', marginBottom: '15px' }}>QUALITY CONTROL & INSPECTION</h4>
                      <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#444', textAlign: 'justify' }}>
-                        Quality is the foundation of everything we do at SBT Engineering. Each new product undergoes Advanced Product Quality Planning (APQP) to ensure complete understanding of customer requirements. We apply global quality methodologies such as FMEA, MSA, SPC, and PPAP to develop robust processes. All critical dimensions are verified using precision instruments and gauges to further enhance accuracy and validation capabilities.
+                        Quality is the foundation of everything we do at Sri Balaji Tech. Each new product undergoes Advanced Product Quality Planning (APQP) to ensure complete understanding of customer requirements. We apply global quality methodologies such as FMEA, MSA, SPC, and PPAP to develop robust processes. All critical dimensions are verified using precision instruments and gauges to further enhance accuracy and validation capabilities.
                      </p>
                   </Col>
                </Row>
@@ -218,8 +217,7 @@ const Capabilities = () => {
                             <tr><td>CNC Turning Centre</td><td>Lokesh-TL160</td><td>270x200 mm</td><td>5</td></tr>
                             <tr><td>CNC Turning Centre</td><td>GlobalVagor-130</td><td>275x325 mm</td><td>3</td></tr>
                             <tr><td>CNC Turning Centre</td><td>Lokesh-TL200</td><td>270x200 mm</td><td>10</td></tr>
-                            <tr><td>CNC Turning Centre</td><td>LMW-LL20TL7</td><td>270x700 mm</td><td>1</td></tr>
-                            <tr><td>CNC Turning Centre</td><td>Jyoti</td><td>270x1200 mm</td><td>1</td></tr>
+                            
                          </tbody>
                        </table>
                      </motion.div>
@@ -228,24 +226,17 @@ const Capabilities = () => {
 
                {/* Secondary Machines Row */}
                <Row className="justify-content-center g-4 mb-5">
-                  <Col lg={5}>
+                  <Col lg={11}>
                      <motion.div style={{ boxShadow: '0 15px 35px rgba(0,0,0,0.1)', borderRadius: '20px', background: '#fff', overflow: 'hidden' }} initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                         <div className="p-3 text-center" style={{ background: '#4169E1', color: '#fff', fontWeight: 'bold' }}>THREAD ROLLING</div>
                         <table className="table machine-table w-100 mb-0">
                            <thead><tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr></thead>
-                           <tbody><tr><td>Thread Rolling</td><td>MTE</td><td>30 Ton</td><td>1</td></tr></tbody>
+                           <tbody><tr><td>Thread Rolling</td><td>MTE</td><td>20 Ton</td><td>1</td></tr></tbody>
+                           <tbody><tr><td>Thread Rolling</td><td>MTE</td><td>15 Ton</td><td>1</td></tr></tbody>
                         </table>
                      </motion.div>
                   </Col>
-                  <Col lg={5}>
-                     <motion.div style={{ boxShadow: '0 15px 35px rgba(0,0,0,0.1)', borderRadius: '20px', background: '#fff', overflow: 'hidden' }} initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                        <div className="p-3 text-center" style={{ background: '#4169E1', color: '#fff', fontWeight: 'bold' }}>BANDSAW CUTTING</div>
-                        <table className="table machine-table w-100 mb-0">
-                           <thead><tr><th>Machine</th><th>Make</th><th>Capacity</th><th>No's</th></tr></thead>
-                           <tbody><tr><td>Bandsaw Machine</td><td>Laxson</td><td>200 mm</td><td>1</td></tr></tbody>
-                        </table>
-                     </motion.div>
-                  </Col>
+                 
                </Row>
 
                {/* Other Machineries Row */}
