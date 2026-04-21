@@ -259,7 +259,7 @@ const AboutUs = () => {
                 muted 
                 playsInline 
                 onTimeUpdate={(e) => {
-                  if (e.target.currentTime >= 91) {
+                  if (e.target.currentTime >= 80) {
                     e.target.currentTime = 0;
                   }
                 }}
