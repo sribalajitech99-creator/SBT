@@ -9,6 +9,7 @@ import grindingVideo from '../assets/Grinding.mp4';
 import section2Video from '../assets/section2.mp4';
 import section3Video from '../assets/section3.mp4';
 import section4Video from '../assets/Section4.mp4';
+import CNC from '../assets/CNC Operator.mp4';
 
 
 const Home = () => {
@@ -234,44 +235,84 @@ const Home = () => {
       </section>
 
       {/* Production Highlights Videos */}
-      <section className="py-5" style={{ backgroundColor: '#fff' }}>
+      <section
+        className="py-5"
+        style={{
+          background: 'linear-gradient(180deg, #ffffff 0%, #f7fbff 100%)',
+        }}
+      >
         <Container>
           <div className="text-center mb-5">
-            <h2 style={{ color: '#4169E1', fontSize: '42px', fontWeight: 600 }}>PRODUCTION HIGHLIGHTS</h2>
+            <h2 style={{ color: '#4169E1', fontSize: '42px', fontWeight: 700, marginBottom: '10px' }}>PRODUCTION HIGHLIGHTS</h2>
+            <p style={{ color: '#5f6b7a', fontSize: '17px', maxWidth: '760px', margin: '0 auto' }}>
+              Live shop-floor moments from CNC operations, inspection and finishing.
+            </p>
             <div style={{ width: '80px', height: '4px', background: '#4169E1', margin: '20px auto' }}></div>
           </div>
-          <Row className="g-4">
+          <Row className="g-4 justify-content-center">
             {[
+              { title: 'CNC Operator', src: CNC },
               { title: 'Inspection 1', src: section2Video },
               { title: 'Inspection 2', src: section3Video },
               { title: 'Grinding Section', src: grindingVideo },
               { title: 'Thread Rolling', src: section4Video },
             ].map((item, idx) => (
-              <Col lg={3} md={6} key={idx}>
+              <Col xl={4} lg={4} md={6} key={idx}>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: idx * 0.1 }}
+                  whileHover={{ y: -8 }}
                   style={{
-                    borderRadius: '16px',
+                    borderRadius: '18px',
                     overflow: 'hidden',
                     background: '#fff',
-                    border: '1px solid #efefef',
-                    boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
+                    border: '1px solid rgba(65, 105, 225, 0.12)',
+                    boxShadow: '0 12px 30px rgba(18, 38, 63, 0.08)',
+                    transition: 'all 0.3s ease',
                   }}
                 >
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }}
-                  >
-                    <source src={item.src} type="video/mp4" />
-                  </video>
-                  <div style={{ padding: '14px 16px', fontWeight: 600, color: '#333', textAlign: 'center' }}>
-                    {item.title}
+                  <div style={{ position: 'relative' }}>
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      style={{ width: '100%', height: '260px', objectFit: 'cover', display: 'block' }}
+                    >
+                      <source src={item.src} type="video/mp4" />
+                    </video>
+                    <div
+                      style={{
+                        position: 'absolute',
+                        inset: 'auto 0 0 0',
+                        padding: '26px 14px 12px',
+                        background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.68) 90%)',
+                        color: '#fff',
+                        fontWeight: 600,
+                        fontSize: '15px',
+                        textAlign: 'center',
+                        letterSpacing: '0.2px',
+                      }}
+                    >
+                      {item.title}
+                    </div>
+                  </div>
+                  <div style={{ padding: '12px 14px', textAlign: 'center', backgroundColor: '#fff' }}>
+                    <span
+                      style={{
+                        display: 'inline-block',
+                        backgroundColor: '#edf3ff',
+                        color: '#2d4fbf',
+                        borderRadius: '999px',
+                        padding: '6px 12px',
+                        fontSize: '12px',
+                        fontWeight: 600,
+                      }}
+                    >
+                      Production Clip
+                    </span>
                   </div>
                 </motion.div>
               </Col>
