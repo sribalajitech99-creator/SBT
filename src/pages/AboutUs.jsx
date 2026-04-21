@@ -14,8 +14,7 @@ import preFooterImg from '../assets/pre-footer images.jpg';
 import isoCertImg from '../assets/certification_iso.png';
 
 const heroVideo = '/Hero2.mp4';
-// Use a lighter file for production reliability on Vercel.
-const homeVideo = '/Home.mp4';
+const homeVideo = '/Sequence 01.mp4';
 
 const AboutUs = () => {
   return (
