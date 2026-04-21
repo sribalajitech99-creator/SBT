@@ -12,9 +12,9 @@ import hvfLogo from '../assets/HVF.jpg';
 import tafeLogo from '../assets/TAFE_Logo.jpg';
 import preFooterImg from '../assets/pre-footer images.jpg';
 import isoCertImg from '../assets/certification_iso.png';
+import homeVideo from '../assets/Sequence 01_1.mp4';
 
 const heroVideo = '/Hero2.mp4';
-const homeVideo = '/Sequence 01.mp4';
 
 const AboutUs = () => {
   return (
