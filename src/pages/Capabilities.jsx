@@ -1,9 +1,9 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { FiThermometer, FiLayers, FiCheckCircle } from 'react-icons/fi';
-
+import homeVideo from '../assets/Sequence 01_2.mp4';
 const Herovideo = '/Hero2.mp4';
-const homeVideo = '/Home.mp4';
+
 
 const Capabilities = () => {
    return (
