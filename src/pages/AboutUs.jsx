@@ -13,7 +13,7 @@ import hvfLogo from '../assets/HVF.jpg';
 import tafeLogo from '../assets/TAFE_Logo.jpg';
 import preFooterImg from '../assets/pre-footer images.jpg';
 import isoCertImg from '../assets/certification_iso.png';
-import homeVideo from '../assets/Home.mp4';
+import homeVideo from '../assets/Sequence 01.mp4';
 
 const AboutUs = () => {
   return (
@@ -259,7 +259,7 @@ const AboutUs = () => {
                 muted 
                 playsInline 
                 onTimeUpdate={(e) => {
-                  if (e.target.currentTime >= 20) {
+                  if (e.target.currentTime >= 91) {
                     e.target.currentTime = 0;
                   }
                 }}
