@@ -314,7 +314,7 @@ const Capabilities = () => {
                    muted 
                    playsInline 
                    onTimeUpdate={(e) => {
-                     if (e.target.currentTime >= 20) {
+                     if (e.target.currentTime >= 140) {
                        e.target.currentTime = 0;
                      }
                    }}
