@@ -8,6 +8,7 @@ import sectionVideo from '../assets/Section.mp4';
 import grindingVideo from '../assets/Grinding.mp4';
 import section2Video from '../assets/section2.mp4';
 import section3Video from '../assets/section3.mp4';
+import section4Video from '../assets/Section4.mp4';
 
 
 const Home = () => {
@@ -241,10 +242,10 @@ const Home = () => {
           </div>
           <Row className="g-4">
             {[
-              { title: 'Main Production Section', src: sectionVideo },
-              { title: 'Grinding Operation', src: grindingVideo },
-              { title: 'Machining Section', src: section2Video },
-              { title: 'Final Production Section', src: section3Video },
+              { title: 'Inspection 1', src: section2Video },
+              { title: 'Inspection 2', src: section3Video },
+              { title: 'Grinding Section', src: grindingVideo },
+              { title: 'Section 4', src: section4Video },
             ].map((item, idx) => (
               <Col lg={3} md={6} key={idx}>
                 <motion.div
