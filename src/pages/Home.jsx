@@ -245,7 +245,7 @@ const Home = () => {
               { title: 'Inspection 1', src: section2Video },
               { title: 'Inspection 2', src: section3Video },
               { title: 'Grinding Section', src: grindingVideo },
-              { title: 'Section 4', src: section4Video },
+              { title: 'Thread Rolling', src: section4Video },
             ].map((item, idx) => (
               <Col lg={3} md={6} key={idx}>
                 <motion.div
