@@ -4,7 +4,10 @@ import { motion } from 'framer-motion';
 import { FiAward, FiTarget, FiClock, FiUsers } from 'react-icons/fi';
 import heroimg from '../assets/hero.png';
 import homeleft from '../assets/Home left image.jpg';
-import homeVideo from '../assets/Section.mp4';
+import sectionVideo from '../assets/Section.mp4';
+import grindingVideo from '../assets/Grinding.mp4';
+import section2Video from '../assets/section2.mp4';
+import section3Video from '../assets/section3.mp4';
 
 
 const Home = () => {
@@ -166,7 +169,7 @@ const Home = () => {
                   }}
                     style={{ width: '100%', height: 'auto', minHeight: '500px', objectFit: 'cover', borderRadius: '15px' }}
                 >
-                     <source src={homeVideo} type="video/mp4" />
+                     <source src={sectionVideo} type="video/mp4" />
                 </video>
                 {/* Intro & New Statistics Section */}
                 <div style={{
@@ -222,6 +225,53 @@ const Home = () => {
                   <div style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>{item.icon}</div>
                   <h4 style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#333' }}>{item.title}</h4>
                   <p style={{ fontSize: '14px', color: '#666', lineHeight: '1.8' }}>{item.desc}</p>
+                </motion.div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
+
+      {/* Production Highlights Videos */}
+      <section className="py-5" style={{ backgroundColor: '#fff' }}>
+        <Container>
+          <div className="text-center mb-5">
+            <h2 style={{ color: '#4169E1', fontSize: '42px', fontWeight: 600 }}>PRODUCTION HIGHLIGHTS</h2>
+            <div style={{ width: '80px', height: '4px', background: '#4169E1', margin: '20px auto' }}></div>
+          </div>
+          <Row className="g-4">
+            {[
+              { title: 'Main Production Section', src: sectionVideo },
+              { title: 'Grinding Operation', src: grindingVideo },
+              { title: 'Machining Section', src: section2Video },
+              { title: 'Final Production Section', src: section3Video },
+            ].map((item, idx) => (
+              <Col lg={3} md={6} key={idx}>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: idx * 0.1 }}
+                  style={{
+                    borderRadius: '16px',
+                    overflow: 'hidden',
+                    background: '#fff',
+                    border: '1px solid #efefef',
+                    boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
+                  }}
+                >
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }}
+                  >
+                    <source src={item.src} type="video/mp4" />
+                  </video>
+                  <div style={{ padding: '14px 16px', fontWeight: 600, color: '#333', textAlign: 'center' }}>
+                    {item.title}
+                  </div>
                 </motion.div>
               </Col>
             ))}
