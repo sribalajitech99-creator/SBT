@@ -1,2 +1,2 @@
-src/assets/home-video.mp4 filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
+public/Sequence 01.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/Sequence 01.mp4 filter=lfs diff=lfs merge=lfs -text
