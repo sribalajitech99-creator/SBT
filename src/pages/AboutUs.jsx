@@ -1,7 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { FiCalendar, FiMaximize, FiActivity, FiZap, FiUsers } from 'react-icons/fi';
-import heroVideo from '../assets/Hero2.mp4';
 import img1 from '../assets/200.webp'
 import galaLogo from '../assets/Gala.jpg';
 import sundramLogo from '../assets/BMQRep_Logos_Interior_Sundram.png';
@@ -13,7 +12,9 @@ import hvfLogo from '../assets/HVF.jpg';
 import tafeLogo from '../assets/TAFE_Logo.jpg';
 import preFooterImg from '../assets/pre-footer images.jpg';
 import isoCertImg from '../assets/certification_iso.png';
-import homeVideo from '../assets/Sequence 01.mp4';
+
+const heroVideo = '/Hero2.mp4';
+const homeVideo = '/Sequence 01.mp4';
 
 const AboutUs = () => {
   return (

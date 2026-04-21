@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import { FiAward, FiTarget, FiClock, FiUsers } from 'react-icons/fi';
 import heroimg from '../assets/hero.png';
 import homeleft from '../assets/Home left image.jpg';
-import homeVideo from '../assets/Home.mp4';
+
+const homeVideo = '/Home.mp4';
 const Home = () => {
   return (
     <div>
