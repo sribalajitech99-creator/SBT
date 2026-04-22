@@ -251,11 +251,12 @@ const Home = () => {
           </div>
           <Row className="g-4 justify-content-center">
             {[
-              { title: 'CNC Operator', src: CNC },
+              { title: 'CNC Operator', src: sectionVideo },
               { title: 'Grinding Section', src: grindingVideo },
               { title: 'Thread Rolling', src: section4Video },
-              { title: 'Inspection 1', src: section2Video },
-              { title: 'Inspection 2', src: section3Video },
+              { title: 'Roughness Inspection ', src: section2Video },
+              { title: 'Contour inspection ', src: section3Video },
+              { title: 'VMS inspection ', src: CNC },
             ].map((item, idx) => (
               <Col xl={4} lg={4} md={6} key={idx}>
                 <motion.div
