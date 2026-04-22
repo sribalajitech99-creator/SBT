@@ -251,8 +251,8 @@ const Home = () => {
           </div>
           <Row className="g-4 justify-content-center">
             {[
-              { title: 'CNC Operator', src: sectionVideo },
-              { title: 'Grinding Section', src: grindingVideo },
+              { title: 'CNC Operation', src: sectionVideo },
+              { title: 'Centerless Grinding', src: grindingVideo },
               { title: 'Thread Rolling', src: section4Video },
               { title: 'Roughness Inspection ', src: section2Video },
               { title: 'Contour inspection ', src: section3Video },
